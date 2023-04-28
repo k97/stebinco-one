@@ -25,8 +25,8 @@ export default function Home() {
                 priority
               />
               <div className={` ${styles.heroContent}`}>
-                  <h1>Hello there, I'm <span className={`${styles.name}`}>Stebin Sebatine</span></h1>
-                  <h2>I'm a <span className={`${styles.title}`}>UI/UX Designer</span> based in Melbourne</h2>
+                  <h1>Hello there,{`I'm`} <span className={`${styles.name}`}>Stebin Sebatine</span></h1>
+                  <h2>{`I'm`} a <span className={`${styles.title}`}>UI/UX Designer</span> based in Melbourne</h2>
                   <h3>I love designing web & user interfaces and</h3> <h4>photography</h4>
               </div>
 
