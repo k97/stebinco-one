@@ -6,8 +6,10 @@ $menucolor-resume: #c86df9;
 
 @mixin linkBgColor {
 
+
   &:nth-child(1) {
     background-color: $menucolor-home;
+
   }
 
   &:nth-child(2) {
