@@ -29,9 +29,9 @@ export default function Resume() {
               <p>
                 Let’s work together!
                 For work inquires feel free to get in touch with me
-                <h3>
-                  <a href="mailto:hello@stebin.co">hello@stebin.co</a></h3>
               </p>
+              <h3>
+                <a href="mailto:hello@stebin.co">hello@stebin.co</a></h3>
             </div>
           </div>
         </main>

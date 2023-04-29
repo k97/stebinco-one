@@ -1,141 +1,121 @@
-.container {
+$menucolor-home: #f9a7a1;
+$menucolor-about: #f5c40f;
+$menucolor-work: #1dc970;
+$menucolor-photo: #5785F5;
+$menucolor-resume: #c86df9;
+
+@mixin linkBgColor {
+
+  &:nth-child(1) {
+    background-color: $menucolor-home;
+  }
+
+  &:nth-child(2) {
+    background-color: $menucolor-about;
+  }
+
+
+  &:nth-child(3) {
+    background-color: $menucolor-work;
+  }
+
+
+  &:nth-child(4) {
+    background-color: $menucolor-photo;
+  }
+
+  &:nth-child(5) {
+    background-color: $menucolor-resume;
+  }
+}
+
+
+.menu {
   --w: 3rem;
-  background: #fff;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #f2f2f2;
-  border-radius: 15px;
-  height: calc(1.5 * var(--w));
-  overflow-x: visible;
+  display: flex;
   position: absolute;
-  width: calc(8.5 * var(--w));
   bottom: 0.750em;
   left: 0;
   right: 0;
+
+  width: calc(8.5 * var(--w));
+  height: calc(1.5 * var(--w));
   margin: 0 auto;
-  display: flex;
+
   flex-direction: row;
   justify-content: center;
-  transition: var(--trans);
 
-  &:hover {
-    width: calc(12 * var(--w));
-  }
+  overflow-x: visible;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  background: #fff;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.84);
+
+  backdrop-filter: blur(12px);
+  background-color: rgba(248, 248, 248, 0.84);
+
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+  opacity: 1;
+
 }
 
-.icon {
+.link {
   position: relative;
-  min-width: calc(1.5 * var(--w));
-  height: 100%;
-  transform-origin: bottom;
-  transition: var(--trans);
+  display: block;
+  min-width: 60px;
 
-  &:nth-of-type(1) {
-    .img {
-      background-image: url("../../public/menu/home.png");
-    }
-  }
+  margin: 6px 0;
 
-  &:nth-of-type(2) {
-    .img {
-      background-image: url("../../public/menu/about.png");
-    }
-  }
-
-  &:nth-of-type(3) {
-    .img {
-      background-image: url("../../public/menu/work.png");
-    }
-  }
-
-  &:nth-of-type(4) {
-    .img {
-      background-image: url("../../public/menu/photography.png");
-    }
-  }
-
-  &:nth-of-type(5) {
-    .img {
-      background-image: url("../../public/menu/resume.png");
-    }
-  }
-
-  &:hover {
-    cursor: pointer;
-    scale: 2.45;
-    margin-inline: 4.5rem;
-
-    .text {
-      opacity: 1;
-    }
-  }
-}
-
-
-.img {
-  transition: .4ms linear;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  translate: -50% 0;
-  width: 80%;
-  aspect-ratio: 1 / 1;
-  border-radius: 0.5em;
-  background-position: center;
-  background-size: cover;
-
-  &:active {
-    transform: translatey(.1rem);
-  }
-}
-
-
-.text {
-  --bg: rgba(220, 218, 218, 0.867);
-  position: relative;
-  font-size: 0.4rem;
-  color: #2c2c2c;
-  background-color: var(--bg);
-  padding: 0.15rem 0.4rem;
-  text-align: center;
-  top: -1rem;
-  left: 50%;
-  translate: -50% 0;
-  border-radius: .4em;
-  opacity: 0;
-  min-width: 2rem;
-
-  &:after {
-    --size: 3px;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: var(--size) solid transparent;
-    border-top-color: var(--bg);
-    border-bottom: 0;
-    margin-left: calc(-1 * var(--size));
-    margin-bottom: calc(-1 * var(--size));
-  }
-}
-
-
-.icon:hover+.icon,
-.icon:has(+ .icon:hover) {
-  scale: 2.2;
-  margin-inline: 0.8rem;
-}
-
-.icon:hover+.icon+.icon,
-.icon:has(+ .icon + .icon:hover) {
-  scale: 1.8;
+  background: #f2f2f2;
   margin-inline: 0.5rem;
-}
 
-.icon:hover+.icon+.icon+.icon,
-.icon:has(+ .icon + .icon + .icon:hover) {
-  scale: 1.3;
-  margin-inline: 0.2rem;
+  opacity: 0.75;
+  border-radius: 15px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 12px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.04), 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
+
+  transition: background-color 0.5s ease;
+
+
+  .icon {
+    position: absolute;
+    width: 100%;
+    transition: .4ms linear;
+    top: 10%;
+    left: 50%;
+    translate: -50% 0;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.5em;
+    scale: 0.68;
+  }
+
+  .label {
+    display: none;
+  }
+
+  &:nth-child(2) {
+
+    .icon {
+      scale: 0.6;
+    }
+  }
+
+  // ---------------HOVER STYLES---------------
+  &:hover {
+    @include linkBgColor;
+  }
+
+  // ---------------ACTIVE STYLES---------------
+  &[class*="active"] {
+    @include linkBgColor;
+  }
 }

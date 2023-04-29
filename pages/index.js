@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/pages/home.module.scss'
 import { motion } from "framer-motion"
 
+import { CMS } from '../lib/constants'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -32,17 +34,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Stebin Sebastine - UI/UX Designer</title>
-        <meta name="description" content="I'm a designer based in Melbourne, Australia. I’m passionate about designing creative design solutions to customer problems through Human-Centered Design®" />
+        <title>{CMS.name} - {CMS.title}</title>
+        <meta name="description" content={CMS.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/browsericon.png" />
+        <link rel="icon" href={CMS.favicon} />
         {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="Stebin Sebastine - UI/UX Designer" />
-        <meta property="og:description" content="I'm a designer based in Melbourne, Australia. I’m passionate about designing creative design solutions to customer problems through Human-Centered Design®" />
-        <meta property="og:image" content="/social.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={CMS?.name} />
+        <meta property="og:description" content={CMS?.description} />
+        <meta property="og:image" content={CMS.openGraph.image} />
 
-        <link rel="canonical" href="https://www.stebin.co/" />
+        <link rel="canonical" href={CMS.url} />
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -60,9 +62,10 @@ export default function Home() {
             priority
           />
           <div className={` ${styles.heroContent}`}>
-            <h1>Hello there,{`I'm`} <span className={`${styles.name}`}>Stebin Sebatine</span></h1>
-            <h2>{`I'm`} a <span className={`${styles.title}`}>UI/UX Designer</span> based in Melbourne</h2>
-            <h3>I love designing web & user interfaces and</h3> <h4>photography</h4>
+            <h1>Hello there,{`I'm`} <span className={`${styles.name}`}>{CMS.name}</span></h1>
+            <h2>{`I'm`} a <span className={`${styles.title}`}>{CMS.title}</span> based in Melbourne</h2>
+            <h3>I love designing web & user interfaces and</h3>
+            <h4>photography</h4>
           </div>
 
           <motion.div variants={textMotion}>
