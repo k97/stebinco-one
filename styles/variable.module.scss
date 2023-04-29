@@ -1,0 +1,10 @@
+/* variables.module.scss */
+$primary-color: #64ff00;
+
+:export {
+  primaryColor: $primary-color;
+}
+
+.main {
+  background-color: $primary-color;
+}
