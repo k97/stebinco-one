@@ -3,7 +3,9 @@
 */
 
 import Head from "next/head";
+import Image from 'next/image'
 import Layout from "../components/layout";
+import styles from '@/styles/pages/work.module.scss'
 
 export default function Work() {
   return (
@@ -16,8 +18,15 @@ export default function Work() {
         <main className="main">
           <div className="content">
             <div>
-            <h1>Work page - Some of my projects</h1>
-            <h2>Coming soon.</h2>
+              <Image
+                className={`${styles.titleImage}`}
+                src="/title/worker.png"
+                alt="Next.js Logo"
+                width={120}
+                height={120}
+                priority />
+              <h1>Work page - Some of my projects</h1>
+              <h2>Coming soon.</h2>
             </div>
           </div>
         </main>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/navbar.module.css";
+import styles from "../styles/components/navbar.module.scss";
 
 const path = [
   { uid: 21, name: ' Home', id: 1, path: '/' },
