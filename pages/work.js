@@ -16,10 +16,10 @@ export default function Work() {
       {/* Layout wayper in nextjs */}
       <Layout>
         <main className="main">
-          <div className="content">
-            <div>
+          <div className="container">
+            <div className="content">
               <Image
-                className={`${styles.titleImage}`}
+                className="titleImage"
                 src="/title/worker.png"
                 alt="Next.js Logo"
                 width={120}

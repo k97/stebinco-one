@@ -19,7 +19,7 @@ export default function Resume() {
           <div className="content">
             <div>
               <Image
-                className={`${styles.titleImage}`}
+                className="titleImage"
                 src="/title/resume.png"
                 alt="Next.js Logo"
                 width={120}

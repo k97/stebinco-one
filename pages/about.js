@@ -14,7 +14,7 @@ export default function About() {
           <div className="container">
             <section className={`${styles.content}`}>
               <Image
-                className={`${styles.titleImage}`}
+                className="titleImage"
                 src="/title/artist.png"
                 alt="Next.js Logo"
                 width={120}
@@ -31,6 +31,11 @@ export default function About() {
                 eager to learn from experienced UX/UI professionals and contribute to the design
                 process with my creativity, curiosity, and problem-solving abilities.
               </p>
+              <img
+                className={styles.map}
+                src="/about-map.png"
+                alt="Next.js Logo"
+              />
             </section>
           </div>
         </main>
