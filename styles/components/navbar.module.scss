@@ -35,7 +35,7 @@ $menucolor-resume: #c86df9;
 .menu {
   --w: 3rem;
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0.750em;
   left: 0;
   right: 0;

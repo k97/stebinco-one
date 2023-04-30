@@ -11,17 +11,18 @@ export default function About() {
       </Head>
       <Layout>
         <main className="main">
-          <div className="container">
-            <section className={`${styles.content}`}>
-              <Image
-                className="titleImage"
-                src="/title/artist.png"
-                alt="Next.js Logo"
-                width={120}
-                height={120}
-                priority />
-              <h1>About</h1>
-              <h2>My story as a designer</h2>
+          <div className="content">
+            <Image
+              className="titleImage"
+              src="/title/artist.png"
+              alt="Next.js Logo"
+              width={120}
+              height={120}
+              priority />
+            <h1>About</h1>
+            <h2>My story as a designer</h2>
+
+            <section className="container">
               <p>
                 I am a UI/UX designer with a creative and passionate background in creating
                 user-centric and engaging digital products. I have a bachelor’s degree in

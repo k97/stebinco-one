@@ -9,8 +9,8 @@ export default function Layout({ children }) {
   };
   return (
     <>
-        <main>{children}</main>
-        <Navbar />
+      <main>{children}</main>
+      <Navbar />
     </>
   );
 }

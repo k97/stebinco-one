@@ -110,6 +110,63 @@ a {
   width: 1200px;
   min-height: 100%;
   width: auto;
+  margin-bottom: 150px;
+
+  .content {
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .titleImage {
+      display: block;
+      text-align: center;
+      margin: 1.0rem auto 0.25rem;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 800;
+      line-height: 1;
+      margin: 0 0 .75rem
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+      margin: 0 0 .75rem;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+      margin: 0 0 .75rem;
+    }
+
+    h4 {
+      font-size: 1.85em;
+      line-height: 1.25;
+      margin: 0 0 .75rem;
+    }
+
+    h5 {
+      font-size: 1.4em;
+      margin: 0 0 .75rem;
+    }
+
+    h6 {
+      font-size: 1.2em;
+      margin: 0 0 .75rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+  }
 }
 
 .container {
@@ -125,10 +182,4 @@ a {
   padding: 0px 24px;
   position: relative;
   width: 100%;
-}
-
-.titleImage {
-  display: block;
-  text-align: center;
-  margin: 2.0rem auto;
 }
