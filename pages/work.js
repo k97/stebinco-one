@@ -28,7 +28,12 @@ export const getStaticProps = async () => {
 
 
 const Work = ({ allWork }) => {
-  console.log(allWork)
+
+  const getAuthorTags = list => {
+    var tagsCollection = list ? list.split(', ') : [];
+    return tagsCollection;
+  }
+
   return (
     <>
       <Head>
@@ -57,13 +62,18 @@ const Work = ({ allWork }) => {
                   <div className={styles.workcard}>
                     <img src={work.coverImage} alt={work.title} />
                     <span>{work.title}</span>
+                    <ul>
+                      {getAuthorTags(work.author.tags).map(tag => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
                   </div>
                 </Link>
               </div>
             ))}
           </section>
 
-        </main>
+        </main >
       </Layout >
     </>
   );

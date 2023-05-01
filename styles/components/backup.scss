@@ -1,3 +1,25 @@
+opacity: 0;
+transform: none;
+border-radius: 16px;
+box-shadow: 0px 0px 4px 0px var(--token-a859bcd3-2adf-4e7e-a9ec-e6905c23dbff, rgba(0, 0, 0, 0.04)),
+0px 4px 16px 0px var(--token-a859bcd3-2adf-4e7e-a9ec-e6905c23dbff, rgba(0, 0, 0, 0.04));
+transform-origin: 50% 50% 0px;
+
+
+left: calc(63.302752293578% - 100px / 2);
+overflow: hidden;
+position: absolute;
+top: calc(77.44680851063832% - 100px / 2);
+will-change: transform;
+z-index: 1;
+
+
+
+
+
+
+
+
 .container {
   --w: 3rem;
   background: #fff;

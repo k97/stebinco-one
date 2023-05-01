@@ -7,7 +7,7 @@ date: "2021-02-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
-  tags: UI/UX Design
+  tags: UX Design, Figma
 ogImage:
   url: "../public/work/iconic-cover.png"
 ---
