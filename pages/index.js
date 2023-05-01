@@ -68,7 +68,7 @@ export default function Home() {
             <h4>photography</h4>
           </div>
 
-          <motion.div variants={textMotion}>
+          <motion.div className={` ${styles.heroIcons}`} variants={textMotion}>
             <Image src="/cracker/figma.png" width={100} height={100} />
             <Image src="/cracker/paintkit.png" width={100} height={100} />
             <Image src="/cracker/partypopper.png" width={100} height={100} />

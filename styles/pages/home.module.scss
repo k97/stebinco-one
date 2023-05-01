@@ -20,6 +20,11 @@
   padding: 4.5rem 2.0rem 2.0rem;
   max-width: 777px;
   text-align: center;
+
+  @media only screen and (max-width: 700px) {
+    margin: 0 1.25rem;
+    padding: 4.5rem 1.25rem 1.25rem;
+  }
 }
 
 .heroImage {
@@ -35,22 +40,35 @@
   h3,
   h4 {
     font-size: 30px;
-    letter-spacing: -0.2px;
-    margin: 0px 0 12px;
+    font-size: 1.8rem;
+    line-height: 38px;
+    letter-spacing: -0.15px;
+    margin: 0 0 12px;
     color: var(--text-primary);
   }
 
   .name {
-    background-color: rgb(162, 89, 255);
+    background-color: var(--hero-purple-bg);
+    color: var(--text-primary);
     border-radius: 5px;
     display: inline-block;
     padding: 0 5px;
   }
 
   .title {
-    background-color: rgb(4, 199, 124);
+    background-color: var(--hero-green-bg);
+    color: var(--text-primary);
     border-radius: 5px;
     display: inline-block;
     padding: 0 5px;
   }
+}
+
+.heroIcons {
+  img {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  @media only screen and (max-width: 700px) {}
 }
