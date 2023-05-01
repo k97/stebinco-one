@@ -26,7 +26,7 @@ const work = ({ work }) => {
 
       <main className={`container sebcontent ${styles.workcontent} mt-4 pt-4`}>
         <section className="row center-xs">
-          <div class="col-xs-12">
+          <div className="col-xs-12">
             {
               <>
                 <div className="row middle-xs">
