@@ -1,7 +1,4 @@
-import { useRouter } from 'next/router'
-import { useState, useRef, useEffect } from "react"
 import Head from 'next/head'
-import ErrorPage from 'next/error'
 import Link from 'next/link'
 
 import { getWorkBySlug, getAllWork } from '../../api/work'
@@ -9,12 +6,14 @@ import markdownToHtml from '../../api/markdowntohtml'
 import Layout from "../../components/layout";
 import styles from '@/styles/pages/work.module.scss'
 
-const work = ({ work }) => {
-  const router = useRouter()
+// import { withRouter } from 'next/router'
 
-  if (!router.isFallback && !work?.slug) {
-    return <ErrorPage statusCode={404} />
-  }
+const work = ({ work }) => {
+  // const router = withRouter()
+
+  // if (!router.isFallback && !work?.slug) {
+  //   return <ErrorPage statusCode={404} />
+  // }
 
   return (
     <Layout>
