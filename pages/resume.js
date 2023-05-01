@@ -25,8 +25,8 @@ export default function Resume() {
                 width={120}
                 height={120}
                 priority />
-              <h1>Resume page</h1>
-              <p>Let’s work together!For work inquires feel free to get in touch with me</p>
+              <h1>Resume</h1>
+              <p>Let’s work together! For work inquires feel free to get in touch with me</p>
               <h3>
                 <a href="mailto:hello@stebin.co">hello@stebin.co</a></h3>
             </div>

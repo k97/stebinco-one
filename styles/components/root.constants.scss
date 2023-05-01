@@ -1,0 +1,49 @@
+:root {
+  --max-width: 1100px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+  --text-primary: #1F1F1F;
+  --text-secondary: #202123;
+  --text-tertiary: #5F6367;
+
+  // Home page variables
+  --home-bg-gradient: linear-gradient(-20deg, #fbfcdb 0%, #e9defa 100%);
+  --primary-background: #F2F2F6;
+
+  --card-container: #FFFFFF; //rgba(248, 248, 248, 0.84)
+  --card-container-secondary: #f3f7fc;
+  --card-contents: #202123;
+
+  --button-background-primary: #3A82F7;
+  --button-text-primary: #D6E2FB
+}
+
+
+//----------------------- Dark mode ------------------------
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #E3E3E3;
+    --text-secondary: #C4C7C5;
+    --text-tertiary: #9BA0A5;
+
+
+    --home-bg-gradient: linear-gradient(315deg, #464d4f 0%, #787e84 74%);
+    --primary-background: #1F1F1F;
+
+    --card-container: #2D2F32;
+    --card-container-secondary: #393D43;
+    --card-contents: #E8EAED;
+
+    --button-background-primary: #7ba1c1;
+    --button-text-primary: #0B2345;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
