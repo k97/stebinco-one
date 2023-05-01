@@ -12,7 +12,7 @@ export default function About() {
       <Layout>
         <main className="container sebcontent">
           <section className="row center-xs">
-            <div class="col-xs-12">
+            <div className="col-xs-12">
               <Image
                 className="titleImage"
                 src="/title/artist.png"
