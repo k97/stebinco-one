@@ -1,13 +1,90 @@
-.titleImage {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
+.workcontainer {
+
+  a {
+    text-decoration: none;
+    border-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
-.content {
+.workcard {
+  margin: 0 0 2.0rem;
+  padding: 1.0rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-  h1,
-  h2 {
-    text-align: center;
+  border-radius: 16px;
+
+  backdrop-filter: blur(12px);
+  background-color: #fff;
+  border: 1px solid #fff;
+
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+  opacity: 1;
+
+  border-radius: 32px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+  transform: none;
+  transform-origin: 50% 50% 0px;
+
+  text-decoration: none;
+
+  transition: all 0.25s linear;
+
+  &:hover {
+    background: #efefef;
+    border-color: #efefef;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 1.12rem;
+    border-bottom: 0;
+    margin: 10px 0 2px;
+    font-weight: 500;
+    color: var(--body-color);
+  }
+
+
+}
+
+.backarrow {
+  text-decoration: none;
+  text-align: left;
+
+  a {
+    padding: 8px 1.0rem;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    color: var(--body-color);
+    transition: all 0.4s linear;
+
+    &:hover {
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+
+  img {
+    display: inline-block;
+    max-width: 25px;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+  }
+
+  @media only screen and (max-width: 48em) {
+    img {
+      padding: 10px 0;
+    }
+
+    span {
+      display: none;
+    }
   }
 }
