@@ -1,0 +1,96 @@
+.markdown-content {
+
+
+  //old styles
+  blockquote {
+    opacity: 0.65;
+    border-radius: 10px;
+    margin-top: var(--chakra-space-4);
+    margin-bottom: var(--chakra-space-8);
+    font-size: var(--chakra-fontSizes-lg);
+    line-height: var(--chakra-lineHeights-tall);
+    text-align: left;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: var(--chakra-fontSizes-3xl);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    padding-bottom: 0;
+    opacity: 0.82;
+    text-align: left;
+  }
+
+
+  p,
+  figure {
+    display: block;
+    margin-top: var(--chakra-space-1);
+    margin-bottom: var(--chakra-space-8);
+    text-align: left;
+
+    figcaption {
+      text-align: center;
+    }
+  }
+
+  ol,
+  ul {
+    list-style-type: initial;
+    margin-left: 1em;
+    margin-top: var(--chakra-space-4);
+    text-align: left;
+
+    li {
+
+      line-height: var(--chakra-lineHeights-tall);
+      text-align: left;
+
+      font-size: var(--chakra-fontSizes-lg);
+
+      @media screen and (min-width: 768px) {
+        font-size: var(--chakra-fontSizes-2xl);
+      }
+    }
+  }
+
+  img {
+    cursor: zoom;
+  }
+
+  //quick fix
+  blockquote,
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+.vhp-markdown-gallery p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 10px;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.work-full-img img {
+  display: block;
+  width: 100%;
+  margin: 2.0rem 10px;
+}
+
+.work-img-border img {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+}
