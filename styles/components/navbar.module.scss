@@ -6,6 +6,9 @@ $menucolor-resume: #1dc970;
 
 @mixin linkBgColor {
 
+  .icon {
+    filter: brightness(4) invert(100%);
+  }
 
   &:nth-child(1) {
     background-color: $menucolor-home;
@@ -39,7 +42,6 @@ $menucolor-resume: #1dc970;
   bottom: 0.750em;
   left: 0;
   right: 0;
-
   width: calc(8.5 * var(--w));
   height: calc(1.5 * var(--w));
   margin: 0 auto;
@@ -49,18 +51,16 @@ $menucolor-resume: #1dc970;
 
   overflow-x: visible;
 
-  border: 1px solid #f2f2f2;
-  border-radius: 15px;
-  background: #fff;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.84);
-
   backdrop-filter: blur(12px);
-  background-color: rgba(248, 248, 248, 0.84);
-
+  // border: 1px solid rgba(255, 255, 255, 0.84);
+  // background-color: rgba(248, 248, 248, 0.84);
+  border-radius: 15px;
+  border: 1px solid var(--card-container);
+  background-color: var(--card-container);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
   opacity: 1;
 
@@ -70,17 +70,14 @@ $menucolor-resume: #1dc970;
   position: relative;
   display: block;
   min-width: 60px;
-
   margin: 6px 0;
-
-  background: #f2f2f2;
   margin-inline: 0.5rem;
 
   opacity: 0.75;
   border-radius: 15px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: var(--card-container-secondary);
   border-radius: 12px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.04), 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
 
@@ -98,6 +95,10 @@ $menucolor-resume: #1dc970;
     aspect-ratio: 1 / 1;
     border-radius: 0.5em;
     scale: 0.68;
+
+    @media (prefers-color-scheme: dark) {
+      filter: invert(.75);
+    }
   }
 
   .tooltip {
@@ -107,7 +108,8 @@ $menucolor-resume: #1dc970;
     text-align: center;
     position: absolute;
     margin-top: -35px;
-    background: #ccc;
+    background-color: var(--card-container);
+    color: var(--card-contents);
     padding: 2px 6px;
     border-radius: 4px;
     opacity: 0;
