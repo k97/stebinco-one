@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import styles from '@/styles/pages/home.module.scss'
 import { motion } from "framer-motion"
 
 import { CMS } from '../lib/constants'
 
-const inter = Inter({ subsets: ['latin'] })
+// const dmSans = DM_Sans({ subsets: ['latin'] })
 
 export default function Home() {
 
@@ -49,8 +49,8 @@ export default function Home() {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
       </Head>
-
-      <main className={`${styles.heroWrapper}`}>
+      {/* ${dmSans.className} */}
+      <main className={`${styles.heroWrapper} `}>
 
         <motion.section className={`${styles.hero}`} initial="rest" whileHover="hover" animate="rest">
           <Image
