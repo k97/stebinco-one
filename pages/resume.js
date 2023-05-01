@@ -15,9 +15,9 @@ export default function Resume() {
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>
-        <main className="main">
-          <div className="content">
-            <div>
+        <main className="container sebcontent">
+          <section className="row center-xs">
+            <div class="col-xs-12">
               <Image
                 className="titleImage"
                 src="/title/resume.png"
@@ -26,14 +26,11 @@ export default function Resume() {
                 height={120}
                 priority />
               <h1>Resume page</h1>
-              <p>
-                Let’s work together!
-                For work inquires feel free to get in touch with me
-              </p>
+              <p>Let’s work together!For work inquires feel free to get in touch with me</p>
               <h3>
                 <a href="mailto:hello@stebin.co">hello@stebin.co</a></h3>
             </div>
-          </div>
+          </section>
         </main>
       </Layout>
     </>
