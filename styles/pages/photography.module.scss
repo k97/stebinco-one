@@ -1,13 +1,7 @@
-.titleImage {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.content {
-
-  h1,
-  h2 {
-    text-align: center;
+.photogallery {
+  img {
+    margin: 0 0 1.0rem;
+    border-radius: 15px;
+    cursor: pointer;
   }
 }
