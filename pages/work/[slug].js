@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { getWorkBySlug, getAllWork } from '../../api/work'
-import markdownToHtml from '../../api/markdowntohtml'
+import { getWorkBySlug, getAllWork } from '../../api/work.api'
+import markdownToHtml from '../../api/markdowntohtml.api'
 import Layout from "../../components/layout";
 import styles from '@/styles/pages/work.module.scss'
 

@@ -9,7 +9,7 @@ import Layout from "../components/layout";
 import styles from '@/styles/pages/work.module.scss'
 
 import { useState, useEffect } from "react"
-import { getAllWork } from '../api/work'
+import { getAllWork } from '../api/work.api'
 
 export const getStaticProps = async () => {
   const allWork = getAllWork([
