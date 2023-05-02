@@ -3,5 +3,11 @@
     margin: 0 0 1.0rem;
     border-radius: 15px;
     cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+      box-shadow: var(--gallery-hover-shadow);
+      ;
+    }
   }
 }
