@@ -12,7 +12,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Resume - {CMS.title}</title>
+        <title>Resume - {CMS.name}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>

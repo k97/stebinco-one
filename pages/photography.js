@@ -28,7 +28,7 @@ export default function Photography() {
   return (
     <>
       <Head>
-        <title>Photography - {CMS.title}</title>
+        <title>Photography - {CMS.name}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>

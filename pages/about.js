@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - {CMS.title}</title>
+        <title>About - {CMS.name}</title>
       </Head>
       <Layout>
         <main className="container sebcontent">
