@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
+import { CMS } from '../../lib/constants'
 import { getWorkBySlug, getAllWork } from '../../api/work.api'
 import markdownToHtml from '../../api/markdowntohtml.api'
-import Layout from "../../components/layout";
+import Layout from "../../components/layout"
 import styles from '@/styles/pages/work.module.scss'
 
 // import { withRouter } from 'next/router'
@@ -18,7 +18,7 @@ const work = ({ work }) => {
   return (
     <Layout>
       <Head>
-        <title>{work.title} - { }</title>
+        <title>{work.title}- {CMS.title}</title>
         <meta property="og:description" content={work.excerpt} />
         <meta property="og:image" content={work.ogImage.url} />
       </Head>

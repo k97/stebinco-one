@@ -35,19 +35,6 @@ export default function Home() {
     <>
       <Head>
         <title>{CMS.name} - {CMS.title}</title>
-        <meta name="description" content={CMS.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href={CMS.favicon} />
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={CMS?.name} />
-        <meta property="og:description" content={CMS?.description} />
-        <meta property="og:image" content={CMS.openGraph.image} />
-
-        <link rel="canonical" href={CMS.url} />
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
       </Head>
       {/* ${dmSans.className} */}
       <main className={`${styles.heroWrapper} `}>

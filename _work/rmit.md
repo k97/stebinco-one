@@ -12,55 +12,43 @@ ogImage:
   url: "../public/work/iconic-cover.png"
 ---
 
-> A travel app design project to simplify travel planning and flight booking, done as part of the RMIT University course.
+> The Airborne Airlines project was the last part of the RMIT UI/UX design course I enrolled in 2021. The main intention of the app was to create a simple flight-booking app which will allow users to book flights. By the time of this project kickoff, I was ready to incorporate all the theoretical knowledge into a design project.
 
-### Objective
-
-The Airborne Airlines project was the last part of the RMIT UI/UX design course I have enrolled in 2021 and I was assigned to choose from 3 projects and I chose to create a mobile airlines app using Figma. The main intention of the app was to create a flight booking app which will allow users to book flights. Once completed I did a video recorded presentation on Loom.
-
-### Problem/Oppurtunity
-
-There are many apps in the market which have many options which look very complicated at times and RMIT wanted students to design a very simple and user friendly design for flight booking
-
-### Hypothesis
-
-The RMIT projects main objective was to create simple flight booking app using Figma.
-With the help of flowcharts, moodboards and setting typographies I was able to approach the design on paper and then take it to Figma.Through low, mid and high fidelity I have created mobile app for flight booking.
-
-### Process
+### UX Process
 
 #### Research
 
-Before starting the design or ideate process for my current app I wanted to know the competitor application design
+Before entering the design process I started off with my desk research first to see the existing apps and what they offer. I had a look at the flight booking app Booking.com and an airline portal Emirates.com mainly to study and understand the customer flow.
 
-#### Flow chart
+On further iteration I narrowed down my research to the Booking.com app and with the help of flowcharts I wrote down the user flow which made it easier for my next step in the design process, which was to sketch out some ideas in the form of low fidelity screens for each step in the flow chart.
 
-I started with flowchart on user flow on a flight booking app which helped to eliminate the assumption part.
+#### Flow charts
 
-#### Low -Fi on paper
+Flow chart was a step by step process of the user flow on a tentatively simpler Booking.com app. In other words I took the most basic part of a flight booking app to use it in my design. The project was to create the most basic flight booking app.
 
-For the low fidelity I chose the paper prototyping for the ease of idea flow and to see how much details I can gather from iterations. I tried to stick onto the basics by doing some desk research on the existing websites such as Booking.com and flight center.
+#### Prototyping
 
-#### Mid-Fi on paper
+Once the flowchart was ready an image was forming in my mind which I used for the first iteration on paper prototyping for the ease of idea flow and to see how much details I could gather from iterations. It was a basic sketch concentrating on the details. From low-fidelity design, I jumped onto mid-fidelity on the paper again to go on with a bit more descriptive iteration which will help in high fidelity and tried to define the button's placement and general screen flows across the application.
 
-From Low fidelity design I jumped onto mid fidelity on the paper again to go on with a bit more descriptive iteration which will help in high fidelity and tried to define the buttons placement and the
-
-### Design Process
+### Styleguide design
 
 #### Moodboard
 
-Before stepping onto the High fidelity design I tried to search around for my moodboard inspirations and the vague idea which developed in my mind during the paper prototyping started to take shape and I was able see which images might help me decide on the theme, colors and design.
+Before stepping onto the high-fidelity design I tried to set up a mood board containing several inspirations. Along with paper prototyping, the design started to take shape and I was able to visualise a style guide of the theme, colours and an overall design experience..
 
 #### Typography
 
-I listed my fonts used in my design with the size and font names for maintaining uniformity throughout my design process.
+I chose a font family and defined the usage of size and formatting for the project. This helped me in maintaining uniformity throughout my design files within Figma. Learning about Figma earlier during my thesis and spending several hours helped me to get set up with the type configurations.
 
 #### Colours
 
-The colors used in the design was listed along with hexa code
-Screen flows - High Fidelity
-As the mid fidelity design was made on the paper I was ready to take my design to the Figma and paper iteration came into help with which I was able to define what I can design and not much confusions on the field/button/image placements.
+From the inspiration from the mood board and iterating a few screens, I was able to lockdown my colour palette for the project. Since this was the initial stages of the design process, I wanted to iterate the usage of primary and secondary colours based on the further evolution of user interface design.
+
+### UI Design in Figma
+
+Along with my paper prototypes, I was ready to start the screen designs on Figma. Spending time on several iterations on paper came into help with which I was able to define where I could place design components like fields/button/images on the screen.
 
 ### Final outcome
 
-RMIT course has given me a good insight into design thinking and how to design a mobile app using the Figma app. Being a first timer I was able to follow the instructions and present my prototype via video recording and pass the project.
+UI designs and UX flow
+The RMIT course gave me a good insight into design process and how to design a mobile app using Figma. Being a first-timer I was able to follow the instructions and present my prototype via video recording and complete the project successfully.
