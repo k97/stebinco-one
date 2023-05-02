@@ -6,6 +6,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Image from 'next/image'
 import styles from '@/styles/pages/photography.module.scss'
+import { CMS } from '../lib/constants'
 
 import { Lightbox } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -27,7 +28,7 @@ export default function Photography() {
   return (
     <>
       <Head>
-        <title>Photography</title>
+        <title>Photography - {CMS.title}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>

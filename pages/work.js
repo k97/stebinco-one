@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from "../components/layout";
 import styles from '@/styles/pages/work.module.scss'
+import { CMS } from '../lib/constants'
 
 import { useState, useEffect } from "react"
 import { getAllWork } from '../api/work.api'
@@ -37,7 +38,7 @@ const Work = ({ allWork }) => {
   return (
     <>
       <Head>
-        <title>Work</title>
+        <title>Work - {CMS.title}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>

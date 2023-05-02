@@ -2,12 +2,13 @@ import Head from "next/head"
 import Image from 'next/image'
 import styles from '@/styles/pages/about.module.scss'
 import Layout from "../components/layout"
+import { CMS } from '../lib/constants'
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>About page</title>
+        <title>About - {CMS.title}</title>
       </Head>
       <Layout>
         <main className="container sebcontent">

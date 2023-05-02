@@ -5,13 +5,14 @@
 import Head from "next/head"
 import Image from 'next/image'
 import Layout from "../components/layout"
+import { CMS } from '../lib/constants'
 import styles from '@/styles/pages/resume.module.scss'
 
 export default function Resume() {
   return (
     <>
       <Head>
-        <title>Resume</title>
+        <title>Resume - {CMS.title}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>
