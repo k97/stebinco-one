@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion"
 
 import styles from '@/styles/pages/home.module.scss'
 import { CMS } from '../lib/constants'
-import { figAnimate, paintKitAnimate, partypopperAnimate, cameraAnimate, phoneAnimte } from '../lib/motion.config'
+import { figAnimate, paintKitAnimate, partypopperAnimate, cameraAnimate, phoneAnimte, wavingHand } from '../lib/motion.config'
 
 export default function Home() {
   return (
@@ -30,6 +30,16 @@ export default function Home() {
               width={100}
               height={100}
               priority
+            />
+            <motion.img
+              className={`${styles.wavingHand}`}
+              src="/hand.svg"
+              alt="Stebin hero image"
+              width={40}
+              height={40}
+              priority
+              title="Wavey wavey!!"
+              variants={wavingHand}
             />
             <div className={` ${styles.heroContent}`}>
               <h1>Hello there, {`I'm`} <span className={`${styles.name}`}>{CMS.name}</span></h1>
