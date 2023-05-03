@@ -28,10 +28,13 @@ export default function Resume() {
                 priority />
               <h1>Resume</h1>
               <h2>Let’s work together!</h2>
-              <p>For work inquires feel free to get in touch with me</p>
-              <h4>
+              <p className={'mt-3 mb-2'}>For work inquires feel free to get in touch with me</p>
+              <h5>
                 <a href="mailto:hello@stebin.co">hello@stebin.co</a>
-              </h4>
+              </h5>
+              <p className={'mt-4'}>If you are looking for my resume, <a href="https://docs.google.com/document/d/18-O2Xkkb2g3qUGJaE1NmtXyebD8BsBDTSE_9BcjPgZc/edit?usp=sharing" target="_blank">it's here</a>.</p>
+              <a className={'btn btn-primary mt-1'}>Download Resume</a>
+
             </div>
           </section>
         </main>
