@@ -22,11 +22,12 @@
   --button-background-primary: #3a82f7;
   --button-text-primary: #d6e2fb;
 
-  --hero-purple-bg: #bd8bfe;
-  --hero-green-bg: #25d692;
+  --hero-purple-bg: #d5b7fc;
+  --hero-green-bg: #53f1b4;
 
   --gallery-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
+  --shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   //CHAKRA
 
@@ -117,7 +118,6 @@
   --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
@@ -221,6 +221,7 @@
     --hero--tag-text: #fff;
 
     --gallery-hover-shadow: 0 14px 28px rgba(90, 90, 90, 0.25), 0 10px 10px rgba(102, 102, 102, 0.22);
+    --shadows-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
   }
 
   html {
