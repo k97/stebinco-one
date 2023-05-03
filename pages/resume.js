@@ -32,7 +32,7 @@ export default function Resume() {
               <h5>
                 <a href="mailto:hello@stebin.co">hello@stebin.co</a>
               </h5>
-              <p className={'mt-4'}>If you are looking for my resume, <a href="https://docs.google.com/document/d/18-O2Xkkb2g3qUGJaE1NmtXyebD8BsBDTSE_9BcjPgZc/edit?usp=sharing" target="_blank">it's here</a>.</p>
+              <p className={'mt-4'}>If you are looking for my resume, <a href="https://docs.google.com/document/d/18-O2Xkkb2g3qUGJaE1NmtXyebD8BsBDTSE_9BcjPgZc/edit?usp=sharing" target="_blank">it&apos;s here</a>.</p>
               <a className={'btn btn-primary mt-1'}>Download Resume</a>
 
             </div>
