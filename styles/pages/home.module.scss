@@ -12,14 +12,15 @@
 }
 
 .hero {
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
   background-color: var(--card-container);
   opacity: 1;
   border-radius: 24px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadows-lg);
   padding: 4.5rem 2.0rem 2.0rem;
   max-width: 777px;
   text-align: center;
+  z-index: 0;
 
   @media only screen and (max-width: 700px) {
     margin: 0 1.25rem;
@@ -31,6 +32,7 @@
   position: absolute;
   margin-top: -120px;
   margin-left: -50px;
+  z-index: 1;
 }
 
 .heroContent {
@@ -65,9 +67,13 @@
 }
 
 .heroIcons {
+  z-index: 0;
+  margin: 100px 0 0 260px;
+  position: absolute;
+
   img {
+    position: absolute;
     display: inline-block;
-    margin: 0 5px;
   }
 
   @media only screen and (max-width: 700px) {}

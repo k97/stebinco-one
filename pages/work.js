@@ -38,7 +38,7 @@ const Work = ({ allWork }) => {
   return (
     <>
       <Head>
-        <title>Work - {CMS.title}</title>
+        <title>Work - {CMS.name}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>

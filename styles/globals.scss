@@ -130,3 +130,24 @@ a {
 }
 
 @import './components/markdown.content.scss';
+
+.btn,
+.sebcontent a.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.0rem 2.0rem;
+  transition: all 250ms ease 0s;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  line-height: 1.2;
+  border-radius: 15px;
+  background-color: var(--button-background-primary);
+  color: var(--button-text-primary);
+
+  &:hover {
+    box-shadow: var(--chakra-shadows-xl);
+  }
+
+}

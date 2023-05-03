@@ -28,7 +28,7 @@ export default function Photography() {
   return (
     <>
       <Head>
-        <title>Photography - {CMS.title}</title>
+        <title>Photography - {CMS.name}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>
@@ -51,28 +51,25 @@ export default function Photography() {
           <section className="row mt-4">
             <div className="col-xs-12">
               <p>My first camera was a <a href="https://www.flickr.com/photos/95742794@N05/27370388280/in/pool-camerawiki/" target="_blank">Yashica automatic</a>, which my father gave me when I was 4-5 years old. Then I got an upgrade to <a href="http://camera-wiki.org/wiki/Yashica_Samurai_X3.0" target="_blank">Yasica SLR</a> when I turned into a teenagar, in which he taught me about setting up focus. My father was an avid portrait photographer and his passion for capturing beautiful moments in our family inspired me to grow into someone who enjoys taking moments of people&apos;s lives.</p>
-            </div>
-            <section className={`mt-4  ${styles.photogallery}`}>
               <p>The gallery below contains some of my best work. I have been featured in several mediums over the years. The most proudest one is a feauture in the Oman magazine when I lived in the UAE.</p>
-
-              <section className="row">
-                {
-                  [...Array(9).keys()].map(val => (
-                    <div className="col-xs-12 col-md-6 col-lg-4" key={val}>
-                      <Image
-                        src={"https://source.unsplash.com/random/500x300?people/" + val}
-                        alt={'Stebin photo gallery' + val}
-                        width={700}
-                        height={475}
-                        onClick={(e) => onImageView(e, "https://source.unsplash.com/random/500x300?people/" + val)}
-                        style={{
-                          width: '100%',
-                          height: 'auto',
-                        }} />
-                    </div>
-                  ))
-                }
-              </section>
+            </div>
+            <section className={`mt-4  row ${styles.photogallery}`}>
+              {
+                [...Array(9).keys()].map(val => (
+                  <div className="col-xs-12 col-md-6 col-lg-4" key={val}>
+                    <Image
+                      src={"https://source.unsplash.com/random/500x300?people/" + val}
+                      alt={'Stebin photo gallery' + val}
+                      width={700}
+                      height={475}
+                      onClick={(e) => onImageView(e, "https://source.unsplash.com/random/500x300?people/" + val)}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                      }} />
+                  </div>
+                ))
+              }
             </section>
 
           </section>
