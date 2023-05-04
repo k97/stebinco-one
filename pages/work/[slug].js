@@ -22,31 +22,24 @@ const work = ({ work }) => {
         <meta property="og:description" content={work.excerpt} />
         <meta property="og:image" content={work.ogImage.url} />
       </Head>
-
-
-      <main className={`container sebcontent ${styles.workcontent} mt-4 pt-4`}>
-        <section className="row center-xs">
-          <div className="col-xs-12">
-            {
-              <>
-                <div className="row middle-xs">
-                  <div className={`col-xs-2 ${styles.backarrow}`}>
-                    <Link href="/work" >
-                      <img src="/back.svg" alt="" />
-                      <span>Back</span>
-                    </Link>
-                  </div>
-                  <div className="col-xs-8">
-                    <h1 className={"mt-4"}>{work.title}</h1>
-                  </div>
-                </div>
-
-                <div className="mt-4 markdown-content" dangerouslySetInnerHTML={{ __html: work.content }} />
-              </>
-            }
-
+      <main className={`container sebcontent ${styles.workcontent}`}>
+        <section className={`row middle-xs`}>
+          <div className={`col-xs-12 mt-4  ${styles.backarrowContainer}`}>
+            <Link href="/work" className={styles.backarrow}>
+              <img src="/back.svg" alt="" />
+              <span>All projects</span>
+            </Link>
           </div>
-        </section></main>
+
+          <div className="col-xs-12 mt-2">
+            <h1 className={"mt-4"}>{work.title}</h1>
+          </div>
+
+          <div className="col-xs-12 mt-2">
+            <div className="mt-2 markdown-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+          </div>
+        </section>
+      </main>
     </Layout >
   )
 }
