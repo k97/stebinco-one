@@ -55,12 +55,10 @@ $menucolor-resume: #1dc970;
   -webkit-backdrop-filter: blur(5px);
 
   border-radius: 16px;
-  backdrop-filter: blur(12px);
-  // border: 1px solid rgba(255, 255, 255, 0.84);
-  // background-color: rgba(248, 248, 248, 0.84);
+  backdrop-filter: blur(var(--card-blur));
   border-radius: 15px;
-  border: 1px solid var(--card-container);
   background-color: var(--card-container);
+  border: 1px solid var(--card-container-border);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
   opacity: 1;
 
@@ -78,6 +76,7 @@ $menucolor-resume: #1dc970;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--card-container-secondary);
+  backdrop-filter: blur(var(--card-blur));
   border-radius: 12px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.04), 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
 

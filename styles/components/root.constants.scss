@@ -14,10 +14,12 @@
   --home-bg-gradient: linear-gradient(-20deg, #fbfcdb 0%, #e9defa 100%);
   --primary-background: #f2f2f6;
 
-  --card-container: #fff; //rgba(248, 248, 248, 0.84)
-  --card-container-secondary: #f3f7fc;
+  --card-container: rgba(255, 255, 255, 0.65);
+  --card-container-border: rgba(255, 255, 255, 0.65);
+  --card-container-secondary: rgba(243, 247, 252, 0.8);
   --card-container-tertiary: #e2e2e2;
   --card-contents: #202123;
+  --card-blur: 12px;
 
   --button-background-primary: #3a82f7;
   --button-text-primary: #d6e2fb;
@@ -208,10 +210,12 @@
     --home-bg-gradient: linear-gradient(315deg, #464d4f 0%, #787e84 74%);
     --primary-background: #1f1f1f;
 
-    --card-container: #2d2f32;
-    --card-container-secondary: #393d43;
+    --card-container: rgba(0, 0, 0, 0.40);
+    --card-container-border: 1px solid rgba(0, 0, 0, 0.35);
+    --card-container-secondary: rgba(57, 61, 67, 0.5);
     --card-container-tertiary: #555;
     --card-contents: #e8eaed;
+    --card-blur: 12px;
 
     --button-background-primary: #7ba1c1;
     --button-text-primary: #0b2345;
