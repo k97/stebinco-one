@@ -35,8 +35,8 @@ export default function Home() {
               className={`${styles.wavingHand}`}
               src="/hand.svg"
               alt="Stebin hero image"
-              width={40}
-              height={40}
+              width={38}
+              height={38}
               priority
               title="Wavey wavey!!"
               variants={wavingHand}

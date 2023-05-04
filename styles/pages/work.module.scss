@@ -75,24 +75,23 @@
 
 }
 
-.backarrow {
+.backarrowContainer {
+  // position: fixed;
+  // top: 0;
+  // z-index: 2;
+}
+
+a.backarrow {
+  display: inline-block;
   text-decoration: none;
   text-align: left;
-
-  a {
-    padding: 8px 1.0rem;
-    border-radius: 5px;
-    border: 1px solid var(--card-container-secondary);
-    background-color: var(--card-container);
-    transition: all 0.4s linear;
-    color: var(--text-primary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
-
-    &:hover {
-      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08);
-    }
-  }
-
+  padding: 8px 1.0rem;
+  border-radius: 5px;
+  border: 1px solid var(--card-container-secondary);
+  background-color: var(--card-container);
+  transition: all 0.4s linear;
+  color: var(--text-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
 
   img {
     display: inline-block;
@@ -110,5 +109,9 @@
     span {
       display: none;
     }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08);
   }
 }
