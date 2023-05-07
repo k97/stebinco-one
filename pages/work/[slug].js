@@ -6,14 +6,7 @@ import markdownToHtml from '../../api/markdowntohtml.api'
 import Layout from "../../components/layout"
 import styles from '@/styles/pages/work.module.scss'
 
-// import { withRouter } from 'next/router'
-
 const work = ({ work }) => {
-  // const router = withRouter()
-
-  // if (!router.isFallback && !work?.slug) {
-  //   return <ErrorPage statusCode={404} />
-  // }
 
   return (
     <Layout>
