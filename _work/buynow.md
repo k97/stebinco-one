@@ -1,17 +1,19 @@
 ---
 title: "The Iconic - Buy Now"
 excerpt: "Mobile app design along with focus on user interface design and development for web application"
-coverImage: "/work/iconic-cover.png"
+coverImage: "/work/theiconic/cover.png"
 date: "2023-02-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
   tags: UX Research, UI Design
 ogImage:
-  url: "../public/work/iconic-cover.png"
+  url: "../public/work/theiconic/cover.png"
 ---
 
 > An unsolicited design project to implement a 1-click checkout feature for The Iconic ecommerce portal, so customer problems are identified & addressed, leading to increased business efficiency.
+
+![](/work/theiconic/slide1.jpg)
 
 ### Objective
 
@@ -33,6 +35,24 @@ Making 1-click checkout an easier option for customers to checkout products on T
 - Reduces purchase time
 - Reduce confusion
 
+### Design Process
+
+![](/work/theiconic/slide2.png)
+
+#### Competitor ScreenFlow from Amazon:
+
+#### Userflow mapping for TheIconic
+
+![](/work/theiconic/slide3.png)
+
+#### Branding
+
+The Iconic: https://www.theiconic.com.au/playbook/guidelines
+
+#### Screens prototyping (paper) -
+
+FIGMA click-through the prototype link.
+
 ### Solution
 
 User jobs:
@@ -42,33 +62,11 @@ Buy a product now as an existing & new customer of The Iconic e-commerce fashion
 - Prioritise and store customer data
 - Remember to “buy now” preferences for future checkouts
 
-### Design Process
-
-Use this figma slide here: https://www.figma.com/file/GNhPQMEStnwEtlgLY6R73P/TheIconic-BuyNow?node-id=38-218&t=hDCl5w3WVd5Zx0Ux-4
-
-### UX methods:
-
-Competitor ScreenFlow from Amazon:
-https://www.figma.com/file/N6ZJ361rOp3nu3Wb5qGVpI/Design-Chetta-Jamming?node-id=3-424&t=v0bgZt9NTJ9gv1Fx-4
-
-### Images of flow charts,
-
-https://www.figma.com/file/N6ZJ361rOp3nu3Wb5qGVpI/Design-Chetta-Jamming?node-id=0%3A1&t=v0bgZt9NTJ9gv1Fx-1
-
-### The Iconic Screens:
-
-Put some images from here: https://www.figma.com/file/GNhPQMEStnwEtlgLY6R73P/TheIconic-BuyNow?node-id=126-169&t=hDCl5w3WVd5Zx0Ux-4
-
-### Branding
-
-The Iconic: https://www.theiconic.com.au/playbook/guidelines
-
-### Screens prototyping (paper) -
-
-FIGMA click-through the prototype link.
+![](/work/theiconic/slide4.png)
 
 ### Final outcome
 
+![](/work/theiconic/slide5.png)
 Quick brief - 50 to 100 words: about the project, lessons learnt, and any future improvements.
 The project which was started on a self interest has come out well with market research, hypothesis on the solution and design. While doing the research I came to know about the patency of the feature Buy now which was invented by Aamazon in 1999 and came out of it in 2017 and free to use for business by other firms. I also learned about screenflows, flowchart and then designing various hypothesis. While designing one should not take assumptions and while doing so how much accessibility and other issues can arrive was being self taught.
 Figma screens
