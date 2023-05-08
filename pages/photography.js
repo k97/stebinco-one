@@ -44,11 +44,16 @@ export default function Photography() {
                 height={120}
                 priority />
               <h1>Photography</h1>
-              <h2>Some of my clicks</h2>
+              <div className={styles.socialwrapper}>
+                <a className={`${styles.socials} ${styles.socialsinsta}`} href="https://www.instagram.com/stebin_sebastine/" target="_blank" title="Instagram profile"></a>
+                <a className={`${styles.socials} ${styles.socialsfiver}`} href="https://500px.com/p/Stebin1?view=photos" target="_blank" title="500px photostrem"></a>
+                <a className={`${styles.socials} ${styles.socialsflickr}`} href="https://www.flickr.com/people/71684799@N07/" target="_blank" title="Flickr album"></a>
+              </div>
+              {/* <h2>Some of my clicks</h2> */}
             </div>
           </section>
 
-          <section className="row mt-4">
+          <section className="row mt-3">
             <div className="col-xs-12">
               <p>My first camera was a <a href="https://www.flickr.com/photos/95742794@N05/27370388280/in/pool-camerawiki/" target="_blank">Yashica automatic</a>, which my father gave me when I was 4-5 years old. Then I got an upgrade to <a href="http://camera-wiki.org/wiki/Yashica_Samurai_X3.0" target="_blank">Yasica SLR</a> when I turned into a teenagar, in which he taught me about setting up focus. My father was an avid portrait photographer and his passion for capturing beautiful moments in our family inspired me to grow into someone who enjoys taking moments of people&apos;s lives.</p>
               <p>The gallery below contains some of my best work. I have been featured in several mediums over the years. The most proudest one is a feauture in the Oman magazine when I lived in the UAE.</p>
