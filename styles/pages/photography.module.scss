@@ -11,3 +11,53 @@
     }
   }
 }
+
+.socialwrapper {}
+
+a.socials {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 4px;
+  border: 0px;
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out;
+
+  &[target=_blank]::after {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.socialsinsta {
+  background-image: url('../../public/socials/insta.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url('../../public/socials/insta-c.svg');
+  }
+}
+
+.socialsfiver {
+  background-image: url('../../public/socials/500px.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url('../../public/socials/500px-c.svg');
+  }
+}
+
+.socialsflickr {
+  background-image: url('../../public/socials/flickr.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url('../../public/socials/flickr-c.svg');
+  }
+}
