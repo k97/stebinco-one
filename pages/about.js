@@ -26,7 +26,7 @@ export default function About() {
             </div>
           </section>
           <section className="row mt-4">
-            <div className="col-xs-12 col-md-6 col-lg-6">
+            <div className="col-xs-12 col-md-6 col-lg-7">
               <p>
                 I am a UI/UX designer with a creative and passionate background in creating
                 user-centric and engaging digital products. I have a bachelor’s degree in
@@ -37,7 +37,7 @@ export default function About() {
                 process with my creativity, curiosity, and problem-solving abilities.
               </p>
             </div>
-            <div className="col-xs-12 col-md-6 col-lg-6">
+            <div className="col-xs-12 col-md-6 col-lg-5">
               <img
                 className={styles.map}
                 src="/about-map.png"
@@ -50,7 +50,7 @@ export default function About() {
               <h3 class="align-left">Publications</h3>
               <p>One of the high points in my photography career was when <strong><a href="https://www.omanmagazine.com/" target="_blank">Oman Magazine</a></strong> published my photographs during my tour of the country. I played my visual strengths of capturing people in their moment, the native farmers of Oman in the deserts of <a href="https://en.wikipedia.org/wiki/Salalah" target="_blank">Salalah</a> with their livestock and the pictures came out really well. You can check the feature below:</p>
               <img
-                className={styles.map}
+                className={`${styles.magazine}`}
                 src="/oman-mag.jpg"
                 alt="Stebin - Oman magazine feature"
               />
