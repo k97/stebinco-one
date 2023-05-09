@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import styles from "../styles/components/navbar.module.scss";
+import Link from "next/link"
+import { useRouter } from "next/router"
+import styles from "../styles/components/navbar.module.scss"
 
 const path = [
   { id: 1, name: " Home", path: "/", imgpath: "../menu/home-icon.svg" },

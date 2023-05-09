@@ -1,9 +1,88 @@
-.map {
-  border-radius: 15px;
-  box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.15);
-}
-
 .magazine {
   border-radius: 15px;
+}
 
+.aboutcard {
+  position: relative;
+  backdrop-filter: blur(16px);
+  background-color: var(--card-container);
+  border-radius: 24px;
+  box-shadow: var(--shadows-sm);
+  padding: 4.5rem 2.0rem 2.0rem;
+  max-width: 777px;
+  text-align: center;
+  z-index: 0;
+  height: 220px;
+  margin-bottom: 2.0rem;
+  transition: all 0.25s linear;
+
+  &:hover {
+    box-shadow: var(--shadows-lg);
+
+    span,
+    strong {
+      color: var(--button-background-primary);
+    }
+  }
+
+  .displayIcon {
+    position: relative;
+    display: block;
+    text-align: left;
+    bottom: 1.0rem;
+    margin-bottom: 0.25rem;
+  }
+
+  span {
+    display: block;
+    font-size: 1.05rem;
+    line-height: 26px;
+    color: var(--text-tertiary);
+    text-align: left;
+  }
+
+  strong {
+    display: block;
+    font-size: 1.45rem;
+    color: var(--text-secondary);
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+
+.mapcard {
+  background-image: url('../../public/about-map.png');
+  background-position: center;
+  background-size: 102%;
+  background-repeat: no-repeat;
+  display: none;
+
+  @media only screen and (min-width: 75em) {
+    display: block;
+  }
+
+  &:hover {
+    box-shadow: var(--shadows-none) !important;
+    background-image: url('../../public/about-map.png');
+  }
+
+  .mapInfo {
+    display: inline-block;
+    color: var(--text-primary);
+    background-color: var(--card-container);
+    border: 1px solid var(--card-container-border);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin: 0 0px 16px 16px;
+
+    img {
+      vertical-align: middle;
+    }
+
+
+  }
 }
