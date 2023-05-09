@@ -1,28 +1,26 @@
 /*
  Show a ui error in nextjs about router. check it and after remove layout comments
 */
-import * as React from "react";
-import Head from "next/head";
-import Layout from "../components/layout";
+import * as React from "react"
+import Head from "next/head"
+import Layout from "../components/layout"
 import Image from 'next/image'
 import styles from '@/styles/pages/photography.module.scss'
 import { CMS } from '../lib/constants'
-
-import { Lightbox } from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import { Lightbox } from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
 
 export default function Photography() {
 
-  const [basicExampleOpen, setBasicExampleOpen] = React.useState(false);
+  const [photoStageOpen, setPhotoStageOpen] = React.useState(false);
 
   var currentSlide = [{
     src: 'https://source.unsplash.com/random/500x300?people/7'
   }];
   const onImageView = (e, value) => {
-
     // currentSlide = [];
     currentSlide[0].src = value;
-    setBasicExampleOpen(true);
+    setPhotoStageOpen(true);
     console.log(currentSlide)
   }
   return (
@@ -45,9 +43,9 @@ export default function Photography() {
                 priority />
               <h1>Photography</h1>
               <div className={styles.socialwrapper}>
-                <a className={`${styles.socials} ${styles.socialsinsta}`} href="https://www.instagram.com/stebin_sebastine/" target="_blank" title="Instagram profile"></a>
-                <a className={`${styles.socials} ${styles.socialsfiver}`} href="https://500px.com/p/Stebin1?view=photos" target="_blank" title="500px photostrem"></a>
-                <a className={`${styles.socials} ${styles.socialsflickr}`} href="https://www.flickr.com/people/71684799@N07/" target="_blank" title="Flickr album"></a>
+                <a className={`${styles.socials} ${styles.socialsinsta}`} href={CMS.socialLinks.instagram} target="_blank" title="Instagram profile"></a>
+                <a className={`${styles.socials} ${styles.socialsunsplash}`} href={CMS.socialLinks.unsplash} target="_blank" title="Unsplash album"></a>
+                <a className={`${styles.socials} ${styles.socialsflickr}`} href={CMS.socialLinks.flickr} target="_blank" title="Flickr photostrem"></a>
               </div>
               {/* <h2>Some of my clicks</h2> */}
             </div>
@@ -81,8 +79,8 @@ export default function Photography() {
         </main >
 
         <Lightbox
-          open={basicExampleOpen}
-          close={() => setBasicExampleOpen(false)}
+          open={photoStageOpen}
+          close={() => setPhotoStageOpen(false)}
           carousel={{ finite: currentSlide.length <= 1 }}
           render={{
             buttonPrev: currentSlide.length <= 1 ? () => null : undefined,
