@@ -11,6 +11,8 @@ ogImage:
   url: "../public/work/iconic-cover.png"
 ---
 
+# (TBD- Content under review)
+
 > An unsolicited design project to simplify marketplace transactions and help elevate endusers to reduce the carbon print by reusing products within the community.
 
 ### Objective
