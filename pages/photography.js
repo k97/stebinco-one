@@ -53,7 +53,7 @@ export default function Photography() {
           <section className="row mt-3">
             <div className="col-xs-12">
               <p>My first camera was a <a href="https://www.flickr.com/photos/95742794@N05/27370388280/in/pool-camerawiki/" target="_blank">Yashica automatic</a>, which my father gave me when I was 5 years old. Then I got an upgrade to <a href="http://camera-wiki.org/wiki/Yashica_Samurai_X3.0" target="_blank">Yasica SLR</a> when I turned into a teenager, in which he taught me about setting up focus. My father was an avid portrait photographer and his passion for capturing beautiful moments in our family inspired me to grow into someone who enjoys taking moments of people&apos;s lives.</p>
-              <p>The gallery below contains some of my best work. I have also published my work on some major platforms, the links are available in the header..</p>
+              <p>The gallery below contains some of my best work. I have also published my work on some major platforms, the links are available in the header.</p>
             </div>
             <section className={`mt-4  row ${styles.photogallery}`}>
               {
