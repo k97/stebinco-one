@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import styles from "../styles/components/navbar.module.scss"
@@ -25,10 +26,21 @@ export default function Navbar() {
     } else {
       activeVal = '';
     }
-
     return activeVal
   };
 
+  const [activeTheme, setActiveTheme] = useState();
+  const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+  useEffect(() => {
+    document.body.dataset.theme = activeTheme;
+    window.localStorage.setItem("theme", activeTheme);
+  }, [activeTheme]);
+
+  const toggleColorMode = (e) => {
+    // https://github.com/robmorieson/next-dark-mode-toggle
+    setActiveTheme(inactiveTheme);
+    e.preventDefault();
+  }
 
   return (
     <>
@@ -41,6 +53,12 @@ export default function Navbar() {
             </Link>
           );
         })}
+        <span className={` ${styles.menusplitter}`}></span>
+        <Link href="" className={`${styles.link} `} onClick={toggleColorMode} >
+          <span className={styles.tooltip}>Toggle mode</span>
+          <span className={`${styles.icon} ${styles.themeMode}`}></span>
+          {/* <img src="../menu/sun-icon.svg" /> */}
+        </Link>
       </nav >
     </>
   )

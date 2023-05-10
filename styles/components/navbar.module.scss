@@ -8,6 +8,7 @@ $menucolor-resume: #1dc970;
 
   .icon {
     filter: brightness(4) invert(100%);
+
   }
 
   &:nth-child(1) {
@@ -42,8 +43,8 @@ $menucolor-resume: #1dc970;
   bottom: 0.750em;
   left: 0;
   right: 0;
-  width: calc(8.5 * var(--w));
-  height: calc(1.5 * var(--w));
+  width: calc(9.15 * var(--w));
+  height: calc(1.42 * var(--w));
   margin: 0 auto;
 
   flex-direction: row;
@@ -51,12 +52,11 @@ $menucolor-resume: #1dc970;
 
   overflow-x: visible;
 
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 
-  border-radius: 16px;
+  // border-radius: 15px;
+  border-radius: 100px;
   backdrop-filter: blur(var(--card-blur));
-  border-radius: 15px;
+  backdrop-filter: blur(100px) saturate(400%) brightness(100%);
   background-color: var(--card-container);
   border: 1px solid var(--card-container-border);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 16px 0px rgba(0, 0, 0, 0.04), 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
@@ -67,37 +67,35 @@ $menucolor-resume: #1dc970;
 .link {
   position: relative;
   display: block;
-  min-width: 60px;
+  min-width: 54px;
   margin: 6px 0;
   margin-inline: 0.5rem;
 
   opacity: 0.75;
-  border-radius: 15px;
+  // border-radius: 12px;
+  border-radius: 50%;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--card-container-secondary);
   backdrop-filter: blur(var(--card-blur));
-  border-radius: 12px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.04), 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
-
   transition: background-color 0.5s ease;
+
 
 
   .icon {
     position: absolute;
     width: 100%;
     transition: .4ms linear;
-    top: 10%;
+    top: 15%;
     left: 50%;
     translate: -50% 0;
     width: 70%;
     aspect-ratio: 1 / 1;
     border-radius: 0.5em;
-    scale: 0.68;
+    scale: 0.65;
+    filter: var(--menu-icon-filter);
 
-    @media (prefers-color-scheme: dark) {
-      filter: invert(.75);
-    }
   }
 
   .tooltip {
@@ -116,7 +114,6 @@ $menucolor-resume: #1dc970;
   }
 
   &:nth-child(2) {
-
     .icon {
       scale: 0.6;
     }
@@ -124,6 +121,7 @@ $menucolor-resume: #1dc970;
 
   // ---------------HOVER STYLES---------------
   &:hover {
+    background-color: #c8c5c5;
     @include linkBgColor;
 
     .tooltip {
@@ -137,4 +135,15 @@ $menucolor-resume: #1dc970;
   &[class*="active"] {
     @include linkBgColor;
   }
+}
+
+.themeMode {
+  background: var(--menu-theme-icon);
+  background-size: 100%;
+}
+
+.menusplitter {
+  width: 1px;
+  background-color: var(--menu-splitter);
+  margin: 15px 4px;
 }
