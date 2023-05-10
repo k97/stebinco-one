@@ -28,7 +28,7 @@ export default function Resume() {
                 priority />
               <h1>Resume</h1>
               <h2>Let’s work together!</h2>
-              <p className={'mt-3 mb-2'}>For work inquires feel free to get in touch with me</p>
+              <p className={'mt-3 mb-2'}>For work inquiries feel free to get in touch with me</p>
               <h5>
                 <a href="mailto:hello@stebin.co">hello@stebin.co</a>
               </h5>
