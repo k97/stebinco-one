@@ -1,5 +1,4 @@
 .workcontainer {
-
   a {
     text-decoration: none;
     border-bottom: 0;
@@ -14,35 +13,10 @@
   }
 }
 
+
 .workcard {
   margin: 0 0 2.0rem;
-  padding: 1.0rem;
-  border: 1px solid #f2f2f2;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
-  border-radius: 16px;
-
-  background-color: var(--card-container);
-  border: 1px solid var(--card-container);
-
-
-  border-radius: 32px;
-  transform: none;
-  transform-origin: 50% 50% 0px;
-
-  text-decoration: none;
-
   transition: all 0.25s linear;
-
-  box-shadow: var(--shadows-sm);
-
-  &:hover {
-    background-color: var(--card-container-secondary);
-    border-color: var(--card-container-secondary);
-    box-shadow: var(--shadows-lg);
-  }
 
   span {
     display: inline-block;
@@ -53,25 +27,15 @@
     color: var(--card-contents);
   }
 
-  ul,
-  li {
+  ul {
     margin: 0;
     padding: 0;
   }
 
   li {
-    list-style: none;
-    color: var(--text-tertiary);
-    font-size: 0.88rem;
-    letter-spacing: 0.25px;
-    display: inline-block;
-    border: 1px solid var(--card-container-tertiary);
     padding: 5px 10px;
     margin: 8px 6px 4px 0;
-    border-radius: 4px;
   }
-
-
 }
 
 .backarrowContainer {

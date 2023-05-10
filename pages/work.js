@@ -60,12 +60,12 @@ const Work = ({ allWork }) => {
             {allWork.map((work) => (
               <div className="col-xs-12 col-md-6 col-lg-4" key={work.slug} >
                 <Link as={`/work/${work.slug}`} href={`/work/${work.slug}`} >
-                  <div className={styles.workcard}>
+                  <div className={`card ${styles.workcard}`}>
                     <img src={work.coverImage} alt={work.title} />
                     <span>{work.title}</span>
                     <ul>
                       {getAuthorTags(work.author.tags).map(tag => (
-                        <li key={tag}>{tag}</li>
+                        <li key={tag} className="s-tags">{tag}</li>
                       ))}
                     </ul>
                   </div>
