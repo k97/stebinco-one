@@ -15,10 +15,9 @@ export default function Photography() {
   const [photoStageOpen, setPhotoStageOpen] = React.useState(false);
 
   var currentSlide = [{
-    src: 'https://source.unsplash.com/random/500x300?people/7'
+    src: 'https://source.unsplash.com/user/ozstebin/500x300?/'
   }];
   const onImageView = (e, value) => {
-    // currentSlide = [];
     currentSlide[0].src = value;
     setPhotoStageOpen(true);
     console.log(currentSlide)
@@ -61,11 +60,11 @@ export default function Photography() {
                 [...Array(9).keys()].map(val => (
                   <div className="col-xs-12 col-md-6 col-lg-4" key={val}>
                     <Image
-                      src={"https://source.unsplash.com/random/500x300?people/" + val}
+                      src={"https://source.unsplash.com/user/ozstebin/500x300?/" + val}
                       alt={'Stebin photo gallery' + val}
                       width={700}
                       height={475}
-                      onClick={(e) => onImageView(e, "https://source.unsplash.com/random/500x300?people/" + val)}
+                      onClick={(e) => onImageView(e, "https://source.unsplash.com/user/ozstebin/500x300?/" + val)}
                       style={{
                         width: '100%',
                         height: 'auto',
