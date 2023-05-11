@@ -127,6 +127,16 @@ a {
 
   }
 
+  a.no-arrow {
+
+    &[target=_blank] {
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+  }
+
 }
 
 @import './components/markdown.content.scss';
@@ -148,8 +158,51 @@ a {
   border: 1px solid var(--button-background-primary);
   color: var(--button-text-primary);
 
+  .btn-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0;
+  }
+
   &:hover {
     box-shadow: var(--chakra-shadows-xl);
   }
 
+}
+
+
+.card {
+  backdrop-filter: blur(16px);
+  background-color: var(--card-container);
+  border: 1px solid var(--card-container);
+  border-radius: 24px;
+  box-shadow: var(--shadows-sm);
+  padding: 1.0rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--card-container-secondary);
+    border-color: var(--card-container-secondary);
+    box-shadow: var(--shadows-lg);
+  }
+}
+
+.card-nohover {
+  &:hover {
+    box-shadow: none;
+    background-color: var(--card-container);
+    border-color: var(--card-container);
+  }
+}
+
+.s-tags {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 8px 6px 4px 0;
+  list-style: none;
+  color: var(--text-tertiary);
+  font-size: 0.88rem;
+  letter-spacing: 0.25px;
+  border: 1px solid var(--card-container-tertiary);
+  border-radius: 6px;
 }

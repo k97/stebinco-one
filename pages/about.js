@@ -37,7 +37,7 @@ export default function About() {
 
             <div className="col-xs-12 col-md-6 col-lg-4">
               <Link href='/resume'>
-                <section className={styles.aboutcard}>
+                <section className={`card ${styles.aboutcard}`}>
                   <Image src="/about/resume-icon.svg" width={60} height={60} className={styles.displayIcon} alt="Resume Icon" />
                   <span>Know more about me</span>
                   <strong>See my resume</strong>
@@ -46,8 +46,8 @@ export default function About() {
             </div>
 
             <div className="col-xs-12 col-md-6 col-lg-4">
-              <a href="mailto:hello@stebin.co">
-                <section className={styles.aboutcard}>
+              <a href={`mailto:${CMS.emailAddress}`}>
+                <section className={`card ${styles.aboutcard}`}>
                   <Image src="/about/mail-icon.svg" width={60} height={60} className={styles.displayIcon} alt="Mail Icon" />
                   <span>Send me an email</span>
                   <strong>Lets work together</strong>
@@ -57,7 +57,7 @@ export default function About() {
 
 
             <div className="col-xs-12 col-lg-4">
-              <section className={`${styles.aboutcard} ${styles.mapcard}`} >
+              <section className={`card ${styles.aboutcard} ${styles.mapcard}`} >
                 <span className={styles.mapInfo}>Current Location <Image src="/about/location_on.svg" width={20} height={20} alt="Map Icon" /></span>
               </section>
             </div>
