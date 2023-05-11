@@ -66,7 +66,7 @@ export default function Resume() {
               </p>
 
               <h4>Tools</h4>
-              <p className="mb-2"> Some of my daily used tools are:</p>
+              <p className="mb-2"> Some of the tools that I use daily:</p>
               <p>
                 <ul>
                   {(CMS.resumeContent.tools).map(skill => (
