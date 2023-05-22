@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { CMS } from '../../lib/constants'
-import { getWorkBySlug, getAllWork } from '../../api/work.api'
-import markdownToHtml from '../../api/markdowntohtml.api'
-import Layout from "../../components/layout"
+import Image from 'next/image'
+
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
+
+import { getWorkBySlug, getAllWork } from '@/api/work.api'
+import markdownToHtml from '@/api/markdowntohtml.api'
+import Layout from "@/components/layout"
 import styles from '@/styles/pages/work.module.scss'
 
 const work = ({ work }) => {
@@ -19,7 +23,13 @@ const work = ({ work }) => {
         <section className={`row middle-xs`}>
           <div className={`col-xs-12 mt-4  ${styles.backarrowContainer}`}>
             <Link href="/work" className={styles.backarrow}>
-              <img src="/back.svg" alt="" />
+              <Image
+                src={imgPath.backIcon}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }} // optional
+                alt="" />
               <span>All projects</span>
             </Link>
           </div>

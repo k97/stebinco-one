@@ -48,7 +48,7 @@
 
 
 .mapcard {
-  background-image: url('../../public/about-map.png');
+  background-image: url('https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/about-map.png');
   background-position: center;
   background-size: 102%;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@
 
   &:hover {
     box-shadow: var(--shadows-none) !important;
-    background-image: url('../../public/about-map.png');
+    background-image: url('https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/about-map.png');
   }
 
   .mapInfo {

@@ -1,19 +1,19 @@
 ---
 title: "The Iconic - Buy Now"
 excerpt: "Mobile app design along with focus on user interface design and development for web application"
-coverImage: "/work/theiconic/cover.png"
+coverImage: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/cover.png"
 date: "2023-02-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
   tags: UX Research, UI Design
 ogImage:
-  url: "../public/work/theiconic/cover.png"
+  url: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/cover.png"
 ---
 
 > An unsolicited design project to implement 1-Click checkout into The Iconic ecommerce portal, so customer problems are identified and addressed, leading to increased business efficiency.
 
-![](/work/theiconic/slide1.jpg)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/slide1.jpg)
 
 ### Objective
 
@@ -48,18 +48,18 @@ Purchase a product now as an existing & new customer of The Iconic e-commerce fa
 
 I visualised the design process (refer to the below image), by how I progressed this feature implementation. The steps were sometimes nonlinear but at a high level this gave me an idea to move towards the next step when I had enough data to progress.
 
-![](/work/theiconic/slide2.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/slide2.png)
 
 I also created screen flows to study how Amazon's checkout processes work for both the conventional & 1-Click checkouts worked. I used the ScreenFlow data later to map out and iterate the user flow for the Iconic portal.
 
-![](/work/theiconic/slide3.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/slide3.png)
 
 I inherited The Iconic's brand design from here and started to prototype the screens in low fidelity to map out different hypotheses. Each hypothesis had its own strengths and tradeoffs. I tested these hypotheses with a small pool of volunteers and friends. I used the insights from these usability tests to expand on the solution and design the high-fidelity screens.
 
-![](/work/theiconic/slide4.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/slide4.png)
 
 ### Final outcome
 
-![](/work/theiconic/slide5.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/theiconic/slide5.png)
 
 During the research and testing process, my hypothesis about 1-Click Checkout was validated and I also discovered that it is essential to ensure the security of the process. Building on trust with the customers is essential in rolling out this feature which may not be apparent with just the user experience and enhancements. I also learnt to approach a feature design with more research processes and testing the hypothesis helped me gather more insights and vet any biases towards the preconceived screen designs.

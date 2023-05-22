@@ -16,9 +16,7 @@
 
 a.socials {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 4px;
+  margin: 4px 10px;
   border: 0px;
 
   background-repeat: no-repeat;
@@ -28,18 +26,4 @@ a.socials {
     display: none;
   }
 
-}
-
-.socialsinsta {
-  background-image: url('../../public/socials/insta-c.svg');
-
-}
-
-.socialsunsplash {
-  background-image: url('../../public/socials/unsplash-c.svg');
-
-}
-
-.socialsflickr {
-  background-image: url('../../public/socials/flickr-c.svg');
 }

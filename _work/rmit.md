@@ -2,19 +2,19 @@
 title: "RMIT Airborne Airlines"
 name: "RMIT Airborne Airlines"
 excerpt: "A travel app design project to simplify travel planning and flight booking, done as part of the RMIT University course"
-coverImage: "/work/rmit/cover.png"
+coverImage: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/cover.png"
 date: "2021-02-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
   tags: UX Design, Figma
 ogImage:
-  url: "../public/work/iconic-cover.png"
+  url: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/cover.png"
 ---
 
 > The Airborne Airlines project was the last part of the RMIT UI/UX design course I enrolled in 2021. The main intention of the app was to create a simple flight-booking app which will allow users to book flights. By the time of this project kickoff, I was ready to incorporate all the theoretical knowledge into a design project.
 
-![](/work/rmit/slide.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/slide.png)
 
 ### UX Process
 
@@ -28,7 +28,7 @@ On further iteration I narrowed down my research to the Booking.com app and with
 
 Flow chart was a step by step process of the user flow on a tentatively simpler Booking.com app. In other words I took the most basic part of a flight booking app to use it in my design. The project was to create the most basic flight booking app.
 
-![](/work/rmit/slide1.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/slide1.png)
 
 #### Prototyping
 
@@ -36,7 +36,7 @@ Once the flowchart was ready an image was forming in my mind which I used for th
 
 ### Styleguide design
 
-![](/work/rmit/slide2.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/slide2.png)
 
 #### Moodboard
 
@@ -54,7 +54,7 @@ From the inspiration from the mood board and iterating a few screens, I was able
 
 Along with my paper prototypes, I was ready to start the screen designs on Figma. Spending time on several iterations on paper came into help with which I was able to define where I could place design components like fields/button/images on the screen.
 
-![](/work/rmit/slide4.png)
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/rmit/slide4.png)
 
 ### Final outcome
 
