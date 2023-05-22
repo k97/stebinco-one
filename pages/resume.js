@@ -4,8 +4,10 @@
 import Link from "next/link"
 import Head from "next/head"
 import Image from 'next/image'
-import Layout from "../components/layout"
-import { CMS } from '../lib/constants'
+
+import Layout from "@/components/layout"
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
 import styles from '@/styles/pages/resume.module.scss'
 
 export default function Resume() {
@@ -20,9 +22,9 @@ export default function Resume() {
           <div className="row center-xs">
             <section className="col-xs-12">
               <Image
+                src={imgPath.titleResume}
                 className="titleImage"
-                src="/title/resume.png"
-                alt="Next.js Logo"
+                alt="Resume title image"
                 width={120}
                 height={120}
                 priority />
@@ -32,16 +34,31 @@ export default function Resume() {
 
             <section className="col-xs-12 col-md-5 col-lg-4">
               <div className={`card card-nohover align-left ${styles.resumecard}`}>
-                <Image src="/sebhero.png" width={100} height={100} className={styles.displayIcon} alt="Resume Icon" />
+                <Image
+                  src={imgPath.sebHeroImg}
+                  width={100}
+                  height={100}
+                  className={styles.displayIcon}
+                  alt="Seb Hero Icon" />
                 <h3>{CMS.name}</h3>
                 <h4>{CMS.title}</h4>
                 <a href={`mailto:${CMS.emailAddress}`} className="d-ib">{CMS.emailAddress}</a>
                 <a className={`d-b no-arrow b-0  mt-3 ${styles.socials} ${styles.socialsinsta}`} href={CMS.socialLinks.linkedIn} target="_blank" title="Linkedin profile">
-                  <Image src="/socials/linkedin-icon.svg" width={38} height={38} alt="Download Icon" className={'btn-icon'} />
+                  <Image
+                    src={imgPath.socialLinkedIn}
+                    width={38}
+                    height={38}
+                    alt="Linkedin Icon"
+                    className={'btn-icon'} />
                 </a>
               </div>
               <a className={`btn btn-primary mt-4 d-b no-arrow  ${styles.resumebtn}`} href={CMS.resumeContent.downloadLink} target="_blank">
-                <Image src="/download-icon.svg" width={16} height={16} alt="Download Icon" className={'btn-icon'} />
+                <Image
+                  src={imgPath.downloadIcon}
+                  width={16}
+                  height={16}
+                  alt="Download Icon"
+                  className={'btn-icon'} />
                 Download Resume
               </a>
             </section>

@@ -2,8 +2,9 @@ import Link from "next/link"
 import Head from "next/head"
 import Image from 'next/image'
 import styles from '@/styles/pages/about.module.scss'
-import Layout from "../components/layout"
-import { CMS } from '../lib/constants'
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
+import Layout from "@/components/layout"
 
 export default function About() {
   return (
@@ -16,8 +17,8 @@ export default function About() {
           <section className="row center-xs">
             <div className="col-xs-12">
               <Image
+                src={imgPath.titleArtist}
                 className="titleImage"
-                src="/title/artist.png"
                 alt="About title image"
                 width={120}
                 height={120}
@@ -38,7 +39,12 @@ export default function About() {
             <div className="col-xs-12 col-md-6 col-lg-4">
               <Link href='/resume'>
                 <section className={`card ${styles.aboutcard}`}>
-                  <Image src="/about/resume-icon.svg" width={60} height={60} className={styles.displayIcon} alt="Resume Icon" />
+                  <Image
+                    src={imgPath.aboutResumeIcon}
+                    width={60}
+                    height={60}
+                    className={styles.displayIcon}
+                    alt="Resume Icon" />
                   <span>Know more about me</span>
                   <strong>See my resume</strong>
                 </section>
@@ -48,7 +54,12 @@ export default function About() {
             <div className="col-xs-12 col-md-6 col-lg-4">
               <a href={`mailto:${CMS.emailAddress}`}>
                 <section className={`card ${styles.aboutcard}`}>
-                  <Image src="/about/mail-icon.svg" width={60} height={60} className={styles.displayIcon} alt="Mail Icon" />
+                  <Image
+                    src={imgPath.aboutEmailIcon}
+                    width={60}
+                    height={60}
+                    className={styles.displayIcon}
+                    alt="Mail Icon" />
                   <span>Send me an email</span>
                   <strong>Lets work together</strong>
                 </section>
@@ -58,16 +69,26 @@ export default function About() {
 
             <div className="col-xs-12 col-lg-4">
               <section className={`card ${styles.aboutcard} ${styles.mapcard}`} >
-                <span className={styles.mapInfo}>Current Location <Image src="/about/location_on.svg" width={20} height={20} alt="Map Icon" /></span>
+                <span className={styles.mapInfo}>Current Location
+                  <Image
+                    src={imgPath.aboutMap}
+                    width={20}
+                    height={20}
+                    alt="Map Icon" />
+                </span>
               </section>
             </div>
 
             <section className="col-xs-12 mt-3">
-              <h3 class="align-left">Publications</h3>
+              <h3 className="align-left">Publications</h3>
               <p>One of the high points in my photography career was when <strong><a href="https://www.omanmagazine.com/" target="_blank">Oman Magazine</a></strong> published my photographs during my tour of the country. I played my visual strengths of capturing people in their moment, the native farmers of Oman in the deserts of <a href="https://en.wikipedia.org/wiki/Salalah" target="_blank">Salalah</a> with their livestock and the pictures came out really well. Please check out the feature below:</p>
-              <img
+              <Image
+                src={imgPath.aboutOmanPublication}
                 className={`${styles.magazine}`}
-                src="/oman-mag.jpg"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }} // optional
                 alt="Stebin - Oman magazine feature"
               />
             </section>

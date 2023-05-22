@@ -47,7 +47,7 @@
 
 
   --menu-icon-filter: 0;
-  --menu-theme-icon: url('/menu/sun-icon.svg') no-repeat center;
+  --menu-theme-icon: url('https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/menu/sun-icon.svg') no-repeat center;
   --menu-splitter: #ccc;
 
   //CHAKRA
@@ -87,7 +87,7 @@
   --shadows-none: none;
 
   --menu-icon-filter: invert(.75);
-  --menu-theme-icon: url('/menu/moon-icon.svg') no-repeat center;
+  --menu-theme-icon: url('https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/menu/moon-icon.svg') no-repeat center;
   --menu-splitter: #444;
 }
 

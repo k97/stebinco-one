@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { motion, useAnimation } from "framer-motion"
 
 import styles from '@/styles/pages/home.module.scss'
-import { CMS } from '../lib/constants'
-import { figAnimate, paintKitAnimate, partypopperAnimate, cameraAnimate, phoneAnimte, wavingHand } from '../lib/motion.config'
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
+import { figAnimate, paintKitAnimate, partypopperAnimate, cameraAnimate, phoneAnimte, wavingHand } from '@/lib/motion.config'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -16,28 +18,28 @@ export default function Home() {
 
         <motion.section initial="rest" animate="rest" whileHover="hover">
           <section className={` ${styles.heroIcons}`} >
-            <motion.img src="/cracker/figma.png" alt="figma icon" width={100} height={100} variants={figAnimate} />
-            <motion.img src="/cracker/partypopper.png" alt="partypopper icon" width={100} height={100} variants={partypopperAnimate} />
-            <motion.img src="/cracker/paintkit.png" alt="paintkit icon" width={100} height={100} variants={paintKitAnimate} />
-            <motion.img src="/cracker/camera.png" alt="camera icon" width={100} height={100} variants={cameraAnimate} />
-            <motion.img src="/cracker/phone.png" alt="phone icon" width={100} height={100} variants={phoneAnimte} />
+            <motion.img src={imgPath.figmaIcon} alt="figma icon" width={100} height={100} variants={figAnimate} />
+            <motion.img src={imgPath.partyIcon} alt="partypopper icon" width={100} height={100} variants={partypopperAnimate} />
+            <motion.img src={imgPath.paintIcon} alt="paintkit icon" width={100} height={100} variants={paintKitAnimate} />
+            <motion.img src={imgPath.cameraIcon} alt="camera icon" width={100} height={100} variants={cameraAnimate} />
+            <motion.img src={imgPath.phoneIcon} alt="phone icon" width={100} height={100} variants={phoneAnimte} />
           </section>
           <section className={`${styles.hero}`}>
             <Image
+              src={imgPath.sebHeroImg}
               className={`${styles.heroImage}`}
-              src="/sebhero.png"
               alt="Stebin hero image"
               width={100}
               height={100}
-              priority
+              priority="true"
             />
             <motion.img
+              src={imgPath.wavingHandIcon}
               className={`${styles.wavingHand}`}
-              src="/hand.svg"
               alt="Stebin hero image"
               width={38}
               height={38}
-              priority
+              priority="true"
               title="Wavey wavey!!"
               variants={wavingHand}
             />

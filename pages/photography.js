@@ -3,12 +3,15 @@
 */
 import * as React from "react"
 import Head from "next/head"
-import Layout from "../components/layout"
 import Image from 'next/image'
-import styles from '@/styles/pages/photography.module.scss'
-import { CMS } from '../lib/constants'
-import { Lightbox } from "yet-another-react-lightbox"
+
 import "yet-another-react-lightbox/styles.css"
+import { Lightbox } from "yet-another-react-lightbox"
+
+import Layout from "@/components/layout"
+import styles from '@/styles/pages/photography.module.scss'
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
 
 export default function Photography() {
 
@@ -34,17 +37,33 @@ export default function Photography() {
           <section className="row center-xs">
             <div className="col-xs-12">
               <Image
+                src={imgPath.titlePhotography}
                 className="titleImage"
-                src="/title/photographer.png"
                 alt="Photography title image"
                 width={120}
                 height={120}
                 priority />
               <h1>Photography</h1>
               <div className={styles.socialwrapper}>
-                <a className={`${styles.socials} ${styles.socialsinsta}`} href={CMS.socialLinks.instagram} target="_blank" title="Instagram profile"></a>
-                <a className={`${styles.socials} ${styles.socialsunsplash}`} href={CMS.socialLinks.unsplash} target="_blank" title="Unsplash album"></a>
-                <a className={`${styles.socials} ${styles.socialsflickr}`} href={CMS.socialLinks.flickr} target="_blank" title="Flickr photostrem"></a>
+                <a className={styles.socials} href={CMS.socialLinks.instagram} target="_blank" title="Instagram profile">
+                  <Image
+                    src={imgPath.socialInsta}
+                    width={30}
+                    height={30}
+                    alt="insta icon" />
+                </a>
+                <a className={styles.socials} href={CMS.socialLinks.unsplash} target="_blank" title="Unsplash album">
+                  <Image
+                    src={imgPath.socialUnsplash}
+                    width={30}
+                    height={30}
+                    alt="unsplash icon" /></a>
+                <a className={styles.socials} href={CMS.socialLinks.flickr} target="_blank" title="Flickr photostrem">
+                  <Image
+                    src={imgPath.socialFlickr}
+                    width={30}
+                    height={30}
+                    alt="flickr icon" /></a>
               </div>
               {/* <h2>Some of my clicks</h2> */}
             </div>
