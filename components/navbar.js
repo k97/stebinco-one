@@ -63,7 +63,8 @@ export default function Navbar() {
           <span className={`${styles.icon} ${styles.themeMode}`}></span>
         </Link>
       </nav >
-      {/*
+
+      {/* Google Anaytics  */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -74,7 +75,7 @@ export default function Navbar() {
       <Script
         src="https://www.google-analytics.com/analytics.js"
         strategy="afterInteractive"
-      /> */}
+      />
     </>
   )
 }
