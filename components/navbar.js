@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Script from 'next/script'
 import { useRouter } from "next/router"
+
+import { CMS } from '../lib/constants'
 import styles from "../styles/components/navbar.module.scss"
 
 const path = [
@@ -60,6 +63,18 @@ export default function Navbar() {
           {/* <img src="../menu/sun-icon.svg" /> */}
         </Link>
       </nav >
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', ${CMS.GoogleAnalyticsId}, 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
     </>
   )
 }
