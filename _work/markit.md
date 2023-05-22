@@ -1,57 +1,47 @@
 ---
-title: "Markit mobile app"
-excerpt: "Mobile app design along with focus on user interface design and development for web application"
-coverImage: "/work/markit-cover.png"
+title: "Markit platform"
+excerpt: "Markit is an unsolicited design project that creates a platform to buy and sell locally."
+coverImage: "/work/markit/cover.png"
 date: "2023-04-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
   tags: Product Design, Mobile Apps
 ogImage:
-  url: "../public/work/iconic-cover.png"
+  url: "/work/markit/cover.png"
 ---
 
-# (TBD- Content under review)
+> Markit is an unsolicited design project that creates a platform to buy and sell locally. There are several platforms like eBay, FB Marketplace, Opendoor and Gumtree. I started to research this space by surveying users of these platforms by using design thinking to solve some of the problems by designing an app.
 
-> An unsolicited design project to simplify marketplace transactions and help elevate endusers to reduce the carbon print by reusing products within the community.
+![](/work/markit/slide1.png)
 
-### Objective
+### Problem framing
 
-While using Facebook marketplace I was searching if there is a standalone marketplace app which will be just for market place purpose and decided to do research and conducted a survey on people who are using marketplace and the pain points associated in it and tried to address it by using various techniques such as personas, crazy 8, storyboards and prototyping before moving to the design part.
+I used several qualitative and quantitative methods to conduct the research. After spending some time on desk research to frame the hypothesis around improving the current garage sale app experiences. I formulated a survey as an evaluative research method, to gather insights. Synthesizing the responses helped me to understand what the users' pain points are and discover new possibilities. I also created user personas and a storyboard to further progress the research.
 
-### Problem/Oppurtunity
+- **Who** : The users of Markit are going to be either a buyer or a seller
+- **What** : To buy and sell products locally
+- **When** : When the seller decided to do a garage sale
+- **Why** : To promote reusability, spring cleaning and earn money
 
-From conducting survey we were able to get the users response from 4 different regions around the world and synthesis it to a report.
-Buyer/seller non-responsiveness on these platforms
-Product listing issues
-Most number of people use Facebook marketplace for listing and purchasing
-Request to new features such as payments, search, planning tools amongst other features
+![](/work/markit/slide2.png)
 
-### Hypothesis
+#### Problem statement:
 
-Ideate, prototype and design a separate a marketplace mobile app.
+Markit aims to solve the problem of finding buyers or sellers for items that people no longer need or want. It will also provide a convenient way to find items that people are looking for at a lower price than retail.
 
-#### Defining personas (optional)
+### Ideation
 
-Created 3 different personas based on the survey report.
+With the help of my some of my friends, I set up an ideation panel to generate some ideas. To help facilitate the session, I set about mapping the user journey. Later, II introduced the participants to the research and helped emphasise the user problems, the personas and storyboarding helped makes this process easier. We ran a Crazy 8 session as a fast-paced sketching exercise that allowed us to generate many ideas in a short amount of time.
 
-### Process
+![](/work/markit/slide3.png)
 
-- Screen flows
-- Moodboard
-- Typography
-- Colours
-- Screens prototyping (paper)
-- Other UX methods: flow charts, form survey design, crazy 8, storyboarding (pictures, artefacts etc) - presentable format
-  Survey stratergy
-- Persona
-- Crazy 8
-- Journey mapping
+### Prototyping
 
-### Final outcome
+With the ideas from Crazy8 and the potential of several new ideas to tackle the current problem set, we set about prototyping the solution. I also found this to be non-linear since it allowed me to frame the HMW while starting to prototype the screens. I sketched out several iterations of wireframes and mockups, to design a functional workflow. This also saved a lot of time to test some of the new ideas and make improvements before designing high-fidelity screens.
 
-Quick brief - 50 to 100 words: about the project, lessons learnt, and any future improvements.
-The project started as a separate marketplace app in mind has turned out to be a well researched, ideated, and iterated app now. The main eye opener was the power of surrey and addressing it on a customer journey map scenario with personas in place which helped me understand the empathy part of the design thinking which I personally think is the first step towards the solution.
-Figma screens
-Click through prototype
-Design presentation: presented to a few mentors (product & engineering)
+### Final design & outcome
+
+![](/work/markit/slide4.png)
+
+The outcomes of design thinking to this problem area helped me to create an app that is more user-centred and that better meets the needs of its customers. I also learnt to design mobile apps for Android and iOS, which gave me a different perspective as a designer. Mobile apps are constantly evolving as the devices and platforms change, and the user needs to evolve with your product or business. It should be simple, scalable, and involve frequent user testing and analytics to identify improvements over time. Providing your users with a beautiful app that helps them complete tasks quickly while on the go will earn brand loyalty and keep your app front and centre in their minds.

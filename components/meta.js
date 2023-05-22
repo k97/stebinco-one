@@ -4,6 +4,7 @@ import { CMS } from '../lib/constants'
 const Meta = () => {
   return (
     <Head>
+      <meta name="title" content={CMS.name - CMS.title} />
       <meta name="description" content={CMS.description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href={CMS.favicon} />
@@ -14,7 +15,6 @@ const Meta = () => {
       <meta name="viewport" content="width=device-width" />
 
       {/* Open Graph / Facebook */}
-      <meta name="description" content={CMS?.description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={CMS.url} />
       <meta property="og:title" content={CMS?.name} />
@@ -22,6 +22,7 @@ const Meta = () => {
       <meta property="og:image" content={CMS.openGraph.image} />
 
 
+      {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={CMS.url} />
       <meta property="twitter:title" content={CMS.name} />

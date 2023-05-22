@@ -48,6 +48,7 @@ export default function Home() {
               <h4>photography</h4>
             </div>
           </section>
+
         </motion.section>
       </main>
     </>
