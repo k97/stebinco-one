@@ -1,5 +1,24 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import { CMS } from '../lib/constants'
+
+function GoogleAnalyticsTracking() {
+  return (
+    <div className="container">
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
+    </div>
+  )
+}
 
 const Meta = () => {
   return (
@@ -42,6 +61,18 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" /> */}
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', ${CMS.GoogleAnalyticsId}, 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
     </Head>
   )
 }
