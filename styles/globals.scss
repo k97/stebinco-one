@@ -105,6 +105,12 @@ a {
     margin: 0 0 1.45rem;
   }
 
+  li {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
   a {
     border-style: solid;
     border-width: 0 0 1px;
@@ -205,4 +211,56 @@ a {
   letter-spacing: 0.25px;
   border: 1px solid var(--card-container-tertiary);
   border-radius: 6px;
+}
+
+
+.shape {
+  position: absolute;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  -webkit-animation: random 7s infinite;
+  animation: random 7s infinite;
+  z-index: 3;
+  width: 220px;
+  height: 220px;
+}
+
+.purple-hero {
+  width: 500px;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  background: #6A14BA;
+  border-radius: 250px;
+  z-index: -1;
+}
+
+.orange-hero {
+  bottom: -40px;
+  right: -70px;
+  background: #FF8A00;
+  border-radius: 160px;
+  z-index: -2;
+  animation-direction: reverse;
+}
+
+.blue-hero {
+  top: 0px;
+  right: -40px;
+  background: #00C1FF;
+  border-radius: 160px;
+  z-index: -3;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.red-hero {
+  bottom: 0px;
+  left: 0px;
+  background: #EB5757;
+  border-radius: 160px;
+  z-index: -4;
+  animation-direction: reverse;
 }
