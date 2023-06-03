@@ -66,6 +66,9 @@
 
   img {
     cursor: zoom;
+    max-width: 100%;
+    width: 100%;
+    height: intrinsic !important;
   }
 
   //quick fix
