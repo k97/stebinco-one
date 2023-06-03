@@ -5,29 +5,32 @@ import React, { useEffect, useState } from "react"
 import Head from "next/head"
 import Image from 'next/image'
 
+import Layout from "@/components/layout"
+import { CMS } from '@/lib/constants'
+import { imgPath } from '@/lib/assets'
+
+import styles from '@/styles/pages/photography.module.scss'
+
+import PhotoAlbum from "react-photo-album";
+
 import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
 import { Lightbox } from "yet-another-react-lightbox"
-// import optional lightbox plugins
+
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
-import Layout from "@/components/layout"
-import styles from '@/styles/pages/photography.module.scss'
-import { CMS } from '@/lib/constants'
-import { imgPath } from '@/lib/assets'
-
-import PhotoAlbum from "react-photo-album";
-
-const API_CLIENTID = process.env.NEXT_PUBLIC_API_CLIENTID;
-const API_PROFILEID = "ozstebin";
-const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}`;
 
 export default function Photography() {
   const [photos, setPhotos] = useState([]);
   const [index, setIndex] = useState(-1);
+
+
+  const API_CLIENTID = process.env.NEXT_PUBLIC_API_CLIENTID;
+  const API_PROFILEID = "ozstebin";
+  const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}&per_page=20`;
 
   var collection = [];
 
