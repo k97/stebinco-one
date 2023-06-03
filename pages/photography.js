@@ -1,39 +1,63 @@
 /*
  Show a ui error in nextjs about router. check it and after remove layout comments
 */
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 import Head from "next/head"
 import Image from 'next/image'
 
 import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/thumbnails.css"
 import { Lightbox } from "yet-another-react-lightbox"
+// import optional lightbox plugins
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
 import Layout from "@/components/layout"
 import styles from '@/styles/pages/photography.module.scss'
 import { CMS } from '@/lib/constants'
 import { imgPath } from '@/lib/assets'
 
+import PhotoAlbum from "react-photo-album";
+
+const API_CLIENTID = process.env.NEXT_PUBLIC_API_CLIENTID;
+const API_PROFILEID = "ozstebin";
+const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}`;
+
 export default function Photography() {
+  const [photos, setPhotos] = useState([]);
+  const [index, setIndex] = useState(-1);
 
-  const [photoStageOpen, setPhotoStageOpen] = React.useState(false);
+  var collection = [];
 
-  var currentSlide = [{
-    src: 'https://source.unsplash.com/user/ozstebin/500x300?/'
-  }];
-  const onImageView = (e, value) => {
-    currentSlide[0].src = value;
-    setPhotoStageOpen(true);
-    console.log(currentSlide)
-  }
+  useEffect(() => {
+    async function fetchUnsplashPhotos() {
+      const response = await fetch(API_URL);
+      const fetchedPhotos = await response.json();
+      collection = [];
+      fetchedPhotos.forEach(val => {
+        collection.push({
+          src: val.urls.regular,
+          width: val.width,
+          height: val.height
+        })
+      });
+
+      setPhotos(collection);
+    }
+    fetchUnsplashPhotos();
+  }, []);
+
+
   return (
     <>
       <Head>
         <title>Photography - {CMS.name}</title>
       </Head>
-      {/* Layout wayper in nextjs */}
       <Layout>
 
-        <main className="container sebcontent">
+        <main className="container sebcontent mb-0 pb-0">
           <section className="row center-xs">
             <div className="col-xs-12">
               <Image
@@ -74,42 +98,26 @@ export default function Photography() {
               <p>My first camera was a <a href="https://www.flickr.com/photos/95742794@N05/27370388280/in/pool-camerawiki/" target="_blank">Yashica automatic</a>, which my father gave me when I was 5 years old. Then I got an upgrade to <a href="http://camera-wiki.org/wiki/Yashica_Samurai_X3.0" target="_blank">Yasica SLR</a> when I turned into a teenager, in which he taught me about setting up focus. My father was an avid portrait photographer and his passion for capturing beautiful moments in our family inspired me to grow into someone who enjoys taking moments of people&apos;s lives.</p>
               <p>The gallery below contains some of my best work. I have also published my work on a few major platforms, the links are available in the header.</p>
             </div>
-            <section className={`mt-4  row ${styles.photogallery}`}>
-              {
-                [...Array(9).keys()].map(val => (
-                  <div className="col-xs-12 col-md-6 col-lg-4" key={val}>
-                    <Image
-                      src={"https://source.unsplash.com/user/ozstebin/500x300?/" + val}
-                      alt={'Stebin photo gallery' + val}
-                      width={700}
-                      height={475}
-                      onClick={(e) => onImageView(e, "https://source.unsplash.com/user/ozstebin/500x300?/" + val)}
-                      style={{
-                        width: '100%',
-                        height: 'auto',
-                      }} />
-                  </div>
-                ))
-              }
-            </section>
 
           </section>
-        </main >
+        </main>
+
+        <section className={`mt-4   ${styles.photogallery}`}>
+          <PhotoAlbum layout="rows" photos={photos} onClick={({ index }) => setIndex(index)} />
+        </section>
 
         <Lightbox
-          open={photoStageOpen}
-          close={() => setPhotoStageOpen(false)}
-          carousel={{ finite: currentSlide.length <= 1 }}
-          render={{
-            buttonPrev: currentSlide.length <= 1 ? () => null : undefined,
-            buttonNext: currentSlide.length <= 1 ? () => null : undefined,
-          }}
-          slides={currentSlide}
+          slides={photos}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+          // enable optional lightbox plugins
+          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
         />
 
 
-      </Layout >
+      </Layout>
     </>
   );
-}
 
+}
