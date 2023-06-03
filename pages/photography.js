@@ -30,7 +30,7 @@ export default function Photography() {
 
   const API_CLIENTID = process.env.NEXT_PUBLIC_API_CLIENTID;
   const API_PROFILEID = "ozstebin";
-  const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}&per_page=20`;
+  const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}&per_page=30`;
 
   var collection = [];
 
