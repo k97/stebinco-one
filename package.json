@@ -12,13 +12,14 @@
   "dependencies": {
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "framer-motion": "5.0.0",
+    "gray-matter": "4.0.2",
     "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "framer-motion": "5.0.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "gray-matter": "4.0.2",
+    "react-photo-album": "^2.2.2",
     "yet-another-react-lightbox": "^3.5.3"
   },
   "devDependencies": {
