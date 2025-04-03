@@ -6,12 +6,11 @@
 
   blockquote,
   blockquote p {
-    opacity: 0.65;
-    border-radius: 10px;
+    opacity: 0.95;
     margin-top: var(--chakra-space-4);
     margin-bottom: var(--chakra-space-8);
     font-size: var(--chakra-fontSizes-xl);
-    line-height: var(--chakra-lineHeights-tall);
+    line-height: 1.75;
     text-align: left;
     margin: 0;
     color: var(--text-primary);
@@ -23,11 +22,11 @@
   h4,
   h5,
   h6 {
-    font-weight: 700;
+    font-weight: bold;
     padding-bottom: 0;
-    opacity: 0.82;
     text-align: left;
     color: var(--text-secondary);
+    margin: 40px 0 5px;
   }
 
 
