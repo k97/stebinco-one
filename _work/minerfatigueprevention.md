@@ -47,20 +47,15 @@ After evaluating options against feasibility, effectiveness, and operator accept
 
 ### Prototyping the solution
 
-I worked closely with the lead designer to create prototypes of both the physical wearable and the digital interfaces. Starting with sketches and paper wireframes, we developed:
-
-- Low-fidelity wireframes for the supervisor dashboard
-- User flows showing how the system would identify high-risk operators
-- Visual mockups for displaying the fatigue risk metric
-- Interactive prototypes for supervisor interventions
-
-![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/readiwatch/design-specs.png)
+I worked closely with the lead designer to create prototypes of both the physical wearable and the digital interfaces.
 
 My contribution focused on understanding the readiwatch device, solution and working on deploying the solution inside Newcrest from design point of view that would allow supervisors to quickly identify at-risk operators and take appropriate action before they began their shifts.
 
 ### Final design & outcome
 
 Among competing concepts, ReadiWatch was chosen for its seamless integration into miners' routines and superior ability to predict fatigue risk before it impacted safety, rather than simply detecting incidents after they occurred.
+
+![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/readiwatch/design-specs.png)
 
 - A rugged wearable device that miners would wear continuously to track sleep
 - Sync stations positioned where operators gathered before shifts
