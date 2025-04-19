@@ -1,6 +1,6 @@
 ---
-title: "ReactGPT"
-name: "ReactGPT"
+title: "ReactGPT.ai"
+name: "ReactGPT.ai"
 excerpt: "ReactGPT is an engineering-focused solution for front-end engineers to boost their coding workflow with specialised React AI"
 coverImage: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/reactgpt/cover.png"
 date: "2025-02-01T00:00:00.000Z"
@@ -12,7 +12,7 @@ ogImage:
   url: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/reactgpt/cover.png"
 ---
 
-> ReactGPT is an engineering-focused solution for front-end engineers to boost their coding workflow with specialised React AI. As a design consultant, I am working along with stakeholders of project leaders & engineers remotely across Australia. This project is currently a work in progress, and I intend to update this portfolio entry as I progress with my deliverables.
+> ReactGPT.ai is an engineering-focused solution for front-end engineers to boost their coding workflow with specialised React AI. As a design consultant, I am working along with stakeholders of project leaders & engineers remotely across Australia. This project is currently a work in progress, and I intend to update this portfolio entry as I progress with my deliverables.
 
 #### Objective
 

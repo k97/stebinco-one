@@ -7,7 +7,7 @@ date: "2024-02-01T00:00:00.000Z"
 author:
   name: Stebin Sebastine
   private: false
-  tags: UX Research, Product Design
+  tags: UX Research, Design Thinking
 ogImage:
   url: "https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/readiwatch/cover.png"
 ---
@@ -16,7 +16,7 @@ ogImage:
 
 ### Problem & Opportunity
 
-Through several interviews with the safety team, we began by analysing incident reports from the past two years to identify patterns. While reviewing these reports, we noticed fatigue appeared repeatedly as either a confirmed or suspected cause in many severe incidents. Despite existing controls like shift limits, there was no way to ensure operators in high-risk roles were getting enough sleep between shifts.
+Through several interviews with the safety team, we began by analysing incident reports from the past two years to identify patterns. While reviewing these reports, we noticed fatigue appeared repeatedly as either a confirmed or suspected cause in many severe incidents. Despite existing several layers of checks and manual controls, there was no active way to ensure operators in high-risk roles were getting enough sleep between shifts.
 We interviewed and conducted diary studies with equipment operators, supervisors, and safety managers to better understand the problem. Through these explorations, a clear issue emerged: the existing Driver Safety System only detected microsleeps after they occurred—when it was already too late to prevent a potential accident.
 
 ![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/readiwatch/design-thinking-framework.png)
@@ -30,7 +30,7 @@ Working with the lead designer, we conducted field observations during shift cha
 - The mining environment required extremely durable technology
 - Any solution would need to balance safety needs with operator privacy
 
-A compelling insight was captured during operator interviews when it was reported that microsleeps are often detected by the system only after a x`xtruck could have already veered off course.
+A compelling insight was captured during operator interviews when it was reported that microsleeps are often detected by the system only after a truck could have already veered off course.
 
 ### Ideation process
 
@@ -47,13 +47,11 @@ After evaluating options against feasibility, effectiveness, and operator accept
 
 ### Prototyping the solution
 
-I worked closely with the lead designer to create prototypes of both the physical wearable and the digital interfaces.
-
-My contribution focused on understanding the readiwatch device, solution and working on deploying the solution inside Newcrest from design point of view that would allow supervisors to quickly identify at-risk operators and take appropriate action before they began their shifts.
+I worked closely with the lead designer to create prototypes of the physical wearable, the digital interfaces, and a test implementation process. We focused on understanding the ReadiWatch device implementation, monitoring operational processes, and identifying the steps needed for deploying the solution within Newcrest. From a design perspective, our goal was to create a system that would allow supervisors to quickly identify at-risk operators and take appropriate action before they began their shifts.
 
 ### Final design & outcome
 
-Among competing concepts, ReadiWatch was chosen for its seamless integration into miners' routines and superior ability to predict fatigue risk before it impacted safety, rather than simply detecting incidents after they occurred.
+After rapidly testing and validating the value add of a wearable solution, ReadiWatch was chosen for its seamless integration into miners' routines and superior ability to predict fatigue risk before it impacted safety, rather than simply detecting incidents after they occurred.
 
 ![](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/readiwatch/design-specs.png)
 
