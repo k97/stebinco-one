@@ -14,6 +14,8 @@ ogImage:
 
 > ReactGPT.ai is an engineering-focused solution for front-end engineers to boost their coding workflow with specialised React AI. As a design consultant, I work with stakeholders, including project leaders and engineers, remotely across Australia. This project is currently a work in progress, and I intend to update this portfolio entry as I progress with my deliverables.
 
+![Desktop Cover](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/reactgpt/Slide1.png)
+
 ## Problem & Opportunity
 
 Through extensive desk research and interviews with front-end developers, we discovered that React developers spend an average of 30% of their time debugging issues, writing repetitive boilerplate code, and searching for optimal implementation patterns. Despite the wide availability of general coding assistants, there was no AI solution specifically tailored to React's unique patterns and best practices while coding through the projects.
@@ -33,6 +35,8 @@ Working with a cross-functional team of UX researchers and React experts, I cond
 
 We picked a compelling insight that emerged when observing developers in their natural workflow: "I know what component I want to build, but I waste time rewriting the same patterns over and over. I wish I could just describe what I need and get a React-optimised solution."
 
+![Reasearch Ref](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/reactgpt/Slide2.png)
+
 ## MVP Strategy
 
 With the engineering team focusing on AI model feasibility, my immediate responsibility was to create a landing page that would validate our concept and generate early user interest. To determine the most effective approach, I facilitated a prioritization workshop with key stakeholders.
@@ -45,6 +49,8 @@ During this collaborative session, we used an impact/effort matrix to evaluate p
 4. Inform the broader product development strategy
 
 The impact/effort exercise revealed that showcasing realistic AI interactions with React-specific code examples would have the highest impact on potential users, while requiring moderate implementation effort.
+
+![Reasearch Ref2](https://k97static.s3.ap-southeast-2.amazonaws.com/stebinco/work/reactgpt/Slide3.png)
 
 ## Landing Page Design Process
 
