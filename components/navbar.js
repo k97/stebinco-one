@@ -6,6 +6,7 @@ import { useRouter } from "next/router"
 import { CMS } from '@/lib/constants'
 import { imgPath } from '@/lib/assets'
 import styles from "../styles/components/navbar.module.scss"
+import GoogleAnalytics from './analytics'
 
 const path = [
   { id: 1, name: " Home", path: "/", iconsrc: imgPath.menuHome },
@@ -65,17 +66,7 @@ export default function Navbar() {
       </nav >
 
       {/* Google Anaytics  */}
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', ${CMS.GoogleAnalyticsId}, 'auto');
-          ga('send', 'pageview');
-        `}
-      </Script>
-      <Script
-        src="https://www.google-analytics.com/analytics.js"
-        strategy="afterInteractive"
-      />
+      <GoogleAnalytics />
     </>
   )
 }
