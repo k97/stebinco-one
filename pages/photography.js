@@ -118,6 +118,7 @@ export default function Photography() {
               sizes: [{ viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" }],
             }}
             breakpoints={[220, 360, 480, 600, 900, 1200]}
+            spacing={8}
             onClick={({ index }) => setIndex(index)}
           />
         </section>
