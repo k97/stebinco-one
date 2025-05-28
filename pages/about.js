@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - {CMS.name}</title>
+        <title>{`About - ${CMS.name}`}</title>
       </Head>
       <Layout>
         <main className="container sebcontent">

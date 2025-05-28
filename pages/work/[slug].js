@@ -15,7 +15,7 @@ const work = ({ work }) => {
   return (
     <Layout>
       <Head>
-        <title>{work.title}- {CMS.name} {CMS.title}</title>
+        <title>{`${work.title} - ${CMS.name} ${CMS.title}`}</title>
         <meta property="og:description" content={work.excerpt} />
         <meta property="og:image" content={work.ogImage.url} />
       </Head>

@@ -4,21 +4,19 @@ import { CMS } from '../lib/constants'
 const Meta = () => {
   return (
     <Head>
-      <meta name="title" content={CMS.name - CMS.title} />
+      <meta name="title" content={`${CMS.name} - ${CMS.title}`} />
       <meta name="description" content={CMS.description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href={CMS.favicon} />
       <link rel="shortcut icon" href={CMS.favicon} />
-
       <link rel="canonical" href={CMS.url} />
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width" />
+      <meta charSet="utf-8" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={CMS.url} />
-      <meta property="og:title" content={CMS?.name} />
-      <meta property="og:description" content={CMS?.description} />
+      <meta property="og:title" content={CMS.name} />
+      <meta property="og:description" content={CMS.description} />
       <meta property="og:image" content={CMS.openGraph.image} />
 
 

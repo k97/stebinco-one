@@ -14,7 +14,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Resume - {CMS.name}</title>
+        <title>{`Resume - ${CMS.name}`}</title>
       </Head>
       {/* Layout wayper in nextjs */}
       <Layout>
@@ -74,23 +74,19 @@ export default function Resume() {
               <p>{CMS.resumeContent.summary}</p>
 
               <h4>Skills</h4>
-              <p>
-                <ul>
-                  {(CMS.resumeContent.skills).map(skill => (
-                    <li key={skill} className="s-tags">{skill}</li>
-                  ))}
-                </ul>
-              </p>
+              <ul>
+                {(CMS.resumeContent.skills).map(skill => (
+                  <li key={skill} className="s-tags">{skill}</li>
+                ))}
+              </ul>
 
               <h4>Tools</h4>
               <p className="mb-2"> Some of the tools that I use daily:</p>
-              <p>
-                <ul>
-                  {(CMS.resumeContent.tools).map(skill => (
-                    <li key={skill} className="s-tags">{skill}</li>
-                  ))}
-                </ul>
-              </p>
+              <ul>
+                {(CMS.resumeContent.tools).map(skill => (
+                  <li key={skill} className="s-tags">{skill}</li>
+                ))}
+              </ul>
 
             </section>
 

@@ -9,19 +9,19 @@ import Layout from "@/components/layout"
 import { CMS } from '@/lib/constants'
 import { imgPath } from '@/lib/assets'
 
-import styles from '@/styles/pages/photography.module.scss'
-
-import PhotoAlbum from "react-photo-album";
-
-import "yet-another-react-lightbox/styles.css"
-import "yet-another-react-lightbox/plugins/thumbnails.css"
 import { Lightbox } from "yet-another-react-lightbox"
 
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import { MasonryPhotoAlbum } from "react-photo-album";
 
+import "react-photo-album/masonry.css";
+import styles from '@/styles/pages/photography.module.scss'
+
+import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/thumbnails.css"
 
 export default function Photography() {
   const [photos, setPhotos] = useState([]);
@@ -56,7 +56,7 @@ export default function Photography() {
   return (
     <>
       <Head>
-        <title>Photography - {CMS.name}</title>
+        <title>{`Photography - ${CMS.name}`}</title>
       </Head>
       <Layout>
 
@@ -105,8 +105,21 @@ export default function Photography() {
           </section>
         </main>
 
-        <section className={`mt-4   ${styles.photogallery}`}>
-          <PhotoAlbum layout="rows" photos={photos} onClick={({ index }) => setIndex(index)} />
+        <section className={`mt-4 px-2  ${styles.photogallery}`}>
+          <MasonryPhotoAlbum
+            photos={photos}
+            columns={containerWidth => {
+              if (containerWidth < 600) return 2;
+              if (containerWidth < 900) return 3;
+              return 4;
+            }}
+            sizes={{
+              size: "1168px",
+              sizes: [{ viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" }],
+            }}
+            breakpoints={[220, 360, 480, 600, 900, 1200]}
+            onClick={({ index }) => setIndex(index)}
+          />
         </section>
 
         <Lightbox

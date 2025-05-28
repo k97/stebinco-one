@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{CMS.name} - {CMS.title}</title>
+        <title>{`${CMS.name} - ${CMS.title}`}</title>
       </Head>
       <main className={`${styles.heroWrapper} `} >
 

@@ -1,7 +1,8 @@
-@import './components/normalise.scss';
-@import './components/root.constants.scss';
-@import './components/grid.scss';
-@import './components/cssmodal.scss';
+@use './components/normalise.scss' as *;
+@use './components/root.constants.scss' as *;
+@use './components/grid.scss' as *;
+@use './components/cssmodal.scss' as *;
+@use './components/markdown.content.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
 
@@ -11,9 +12,10 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
 }
-
-html {}
 
 html,
 body {
@@ -146,8 +148,6 @@ a {
   }
 
 }
-
-@import './components/markdown.content.scss';
 
 .btn,
 .sebcontent a.btn {
