@@ -8,13 +8,13 @@ export function getWorkSlugs() {
   return fs.readdirSync(workDirectory)
 }
 
-export function getWorkBySlug(slug, fields = []) {
+export function getWorkBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(workDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const items = {}
+  const items: { [key: string]: any } = {}
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
@@ -33,7 +33,7 @@ export function getWorkBySlug(slug, fields = []) {
   return items
 }
 
-export function getAllWork(fields = []) {
+export function getAllWork(fields: string[] = []) {
   const slugs = getWorkSlugs();
   const work = slugs
     .map((slug) => getWorkBySlug(slug, fields))

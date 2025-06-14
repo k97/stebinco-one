@@ -17,14 +17,11 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import { MasonryPhotoAlbum } from "react-photo-album";
 
-import "react-photo-album/masonry.css";
-import styles from '@/styles/pages/photography.module.scss'
-
 import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
 
 export default function Photography() {
-  const [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState<Array<{ src: string; width: number; height: number }>>([]);
   const [index, setIndex] = useState(-1);
 
 
@@ -32,14 +29,12 @@ export default function Photography() {
   const API_PROFILEID = "ozstebin";
   const API_URL = `https://api.unsplash.com/users/${API_PROFILEID}/photos/?client_id=${API_CLIENTID}&per_page=30`;
 
-  var collection = [];
-
   useEffect(() => {
     async function fetchUnsplashPhotos() {
       const response = await fetch(API_URL);
-      const fetchedPhotos = await response.json();
-      collection = [];
-      fetchedPhotos.forEach(val => {
+      const fetchedPhotos: any[] = await response.json();
+      const collection: any[] = [];
+      fetchedPhotos.forEach((val: any) => {
         collection.push({
           src: val.urls.regular,
           width: val.width,
@@ -50,7 +45,7 @@ export default function Photography() {
       setPhotos(collection);
     }
     fetchUnsplashPhotos();
-  }, []);
+  }, [API_URL]);
 
 
   return (
@@ -71,21 +66,21 @@ export default function Photography() {
                 height={120}
                 priority />
               <h1>Photography</h1>
-              <div className={styles.socialwrapper}>
-                <a className={styles.socials} href={CMS.socialLinks.instagram} target="_blank" title="Instagram profile">
+              <div className="flex flex-row gap-2 justify-center md:justify-start mt-2 mb-4">
+                <a className="rounded-full bg-white shadow p-1 hover:bg-gray-100 transition" href={CMS.socialLinks.instagram} target="_blank" title="Instagram profile">
                   <Image
                     src={imgPath.socialInsta}
                     width={30}
                     height={30}
                     alt="insta icon" />
                 </a>
-                <a className={styles.socials} href={CMS.socialLinks.unsplash} target="_blank" title="Unsplash album">
+                <a className="rounded-full bg-white shadow p-1 hover:bg-gray-100 transition" href={CMS.socialLinks.unsplash} target="_blank" title="Unsplash album">
                   <Image
                     src={imgPath.socialUnsplash}
                     width={30}
                     height={30}
                     alt="unsplash icon" /></a>
-                <a className={styles.socials} href={CMS.socialLinks.flickr} target="_blank" title="Flickr photostrem">
+                <a className="rounded-full bg-white shadow p-1 hover:bg-gray-100 transition" href={CMS.socialLinks.flickr} target="_blank" title="Flickr photostrem">
                   <Image
                     src={imgPath.socialFlickr}
                     width={30}
@@ -105,7 +100,7 @@ export default function Photography() {
           </section>
         </main>
 
-        <section className={`mt-4 px-2  ${styles.photogallery}`}>
+        <section className="mt-4 px-2">
           <MasonryPhotoAlbum
             photos={photos}
             columns={containerWidth => {
