@@ -36,7 +36,7 @@ export default function FeaturedProjects() {
               <div>
                 <h4 className="text-lg font-bold text-white">ReactGPT.ai</h4>
                 <p className="text-md text-white opacity-80">
-                  Led the design of a GenAI platform that simplifies UI code integration into web applications.
+                  Leading the design of a GenAI platform that simplifies UI code integration into web applications.
                 </p>
               </div>
               <div className="flex gap-2 mt-2">
