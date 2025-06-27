@@ -29,12 +29,12 @@ export default function FeaturedProjects() {
       </h3>
 
       <div className="flex flex-col gap-6">
-        {/* AnyElement.AI Project */}
+        {/* ReactGPT.AI Project */}
         <div className="w-full">
           <div className="h-40 rounded-2xl bg-gradient-to-r from-[#4fdcff] to-[#6a8cff] p-4 relative shadow-md">
             <div className="flex flex-col h-full justify-between">
               <div>
-                <h4 className="text-lg font-bold text-white">AnyElement.AI</h4>
+                <h4 className="text-lg font-bold text-white">ReactGPT.ai</h4>
                 <p className="text-md text-white opacity-80">
                   Led the design of a GenAI platform that simplifies UI code integration into web applications.
                 </p>
