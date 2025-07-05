@@ -10,6 +10,7 @@ import {
   Download,
   Moon,
   Home,
+  LibraryBig,
 } from "lucide-react";
 import { CMS } from "@/lib/constants";
 import { Inter } from "next/font/google";
@@ -30,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   const isActive = (path: string) => {
-    return router.pathname === path;
+    return router.pathname === path || router.pathname.startsWith(path + '/');
   };
 
   return (
@@ -98,6 +99,19 @@ export default function Navbar() {
           >
             <Briefcase className="w-5 h-5" />
             <span>Work</span>
+          </Link>
+
+          <Link
+            href="/blog"
+            className={cn(
+              "px-4 py-2 rounded-full flex items-center gap-2 transition-all border",
+              isActive("/blog")
+                ? "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-200 dark:border-gray-600"
+                : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-gray-200/50 dark:border-gray-700/50"
+            )}
+          >
+            <LibraryBig className="w-5 h-5" />
+            <span>Blog</span>
           </Link>
 
           <a
